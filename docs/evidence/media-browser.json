@@ -1,0 +1,405 @@
+{
+  "startedAt": "2026-10-22T00:14:02.419Z",
+  "scope": "Desktop Chromium real decoding; generated fixtures; no physical-phone or Safari claim.",
+  "cases": [
+    {
+      "name": "EXIF JPEG orientations 6 and 8",
+      "status": "pass",
+      "result": [
+        {
+          "orientation": 6,
+          "inputSha256": "12041a1c94d25b2e70b72647656c1431b7116071d63c9e98f8b9894e62a1d670",
+          "canonicalExif": {
+            "segments": 0,
+            "orientations": []
+          },
+          "expectedMarkerOrder": [
+            "blue",
+            "red",
+            "yellow",
+            "green"
+          ],
+          "metadata": {
+            "id": "df212ddb-a0df-46fc-829e-377e1adfbf2e",
+            "name": "orientation-6.jpg",
+            "mime": "image/jpeg",
+            "width": 80,
+            "height": 120,
+            "sha256": "f6cefef00a17cf2c7aa252cd63e5fa7ca4cf8ba3e86fb3d664735e7b1a2ed1c2",
+            "sourceSha256": "12041a1c94d25b2e70b72647656c1431b7116071d63c9e98f8b9894e62a1d670",
+            "boxes": [],
+            "reviewed": false
+          },
+          "inputBytesUnchanged": true,
+          "canonical": {
+            "width": 80,
+            "height": 120,
+            "mime": "image/jpeg",
+            "samples": [
+              [
+                30,
+                70,
+                220,
+                255
+              ],
+              [
+                220,
+                30,
+                40,
+                255
+              ],
+              [
+                231,
+                210,
+                41,
+                255
+              ],
+              [
+                30,
+                189,
+                70,
+                255
+              ]
+            ]
+          },
+          "thumbnail": {
+            "width": 80,
+            "height": 120,
+            "mime": "image/webp",
+            "samples": [
+              [
+                31,
+                70,
+                221,
+                255
+              ],
+              [
+                221,
+                30,
+                40,
+                255
+              ],
+              [
+                230,
+                210,
+                41,
+                255
+              ],
+              [
+                31,
+                189,
+                70,
+                255
+              ]
+            ]
+          },
+          "customThumbnail": {
+            "width": 43,
+            "height": 64,
+            "mime": "image/webp",
+            "samples": [
+              [
+                31,
+                70,
+                221,
+                255
+              ],
+              [
+                221,
+                30,
+                40,
+                255
+              ],
+              [
+                230,
+                210,
+                41,
+                255
+              ],
+              [
+                31,
+                189,
+                70,
+                255
+              ]
+            ]
+          },
+          "decoder": "createImageBitmap/from-image"
+        },
+        {
+          "orientation": 8,
+          "inputSha256": "dd732b5807aff6f4fe9f663b43acf56527a80788dd6f8c4a80c16d97e36b85ca",
+          "canonicalExif": {
+            "segments": 0,
+            "orientations": []
+          },
+          "expectedMarkerOrder": [
+            "green",
+            "yellow",
+            "red",
+            "blue"
+          ],
+          "metadata": {
+            "id": "63bc6f02-5f9b-457e-86e2-ae51eb742174",
+            "name": "orientation-8.jpg",
+            "mime": "image/jpeg",
+            "width": 80,
+            "height": 120,
+            "sha256": "110bc93984b05cc62b2d4210377a852d5cdfc90ad825fedd8a694cac7300b6bb",
+            "sourceSha256": "dd732b5807aff6f4fe9f663b43acf56527a80788dd6f8c4a80c16d97e36b85ca",
+            "boxes": [],
+            "reviewed": false
+          },
+          "inputBytesUnchanged": true,
+          "canonical": {
+            "width": 80,
+            "height": 120,
+            "mime": "image/jpeg",
+            "samples": [
+              [
+                30,
+                189,
+                70,
+                255
+              ],
+              [
+                231,
+                210,
+                41,
+                255
+              ],
+              [
+                220,
+                30,
+                40,
+                255
+              ],
+              [
+                30,
+                70,
+                220,
+                255
+              ]
+            ]
+          },
+          "thumbnail": {
+            "width": 80,
+            "height": 120,
+            "mime": "image/webp",
+            "samples": [
+              [
+                31,
+                189,
+                70,
+                255
+              ],
+              [
+                230,
+                210,
+                41,
+                255
+              ],
+              [
+                221,
+                30,
+                40,
+                255
+              ],
+              [
+                29,
+                71,
+                221,
+                255
+              ]
+            ]
+          },
+          "customThumbnail": {
+            "width": 43,
+            "height": 64,
+            "mime": "image/webp",
+            "samples": [
+              [
+                31,
+                189,
+                70,
+                255
+              ],
+              [
+                230,
+                210,
+                41,
+                255
+              ],
+              [
+                221,
+                30,
+                40,
+                255
+              ],
+              [
+                31,
+                70,
+                221,
+                255
+              ]
+            ]
+          },
+          "decoder": "createImageBitmap/from-image"
+        }
+      ]
+    },
+    {
+      "name": "Transparent PNG and thumbnail sizing",
+      "status": "pass",
+      "result": {
+        "metadata": {
+          "id": "f470eed0-95fa-4beb-8096-795e2ce3d13f",
+          "name": "transparent.png",
+          "mime": "image/png",
+          "width": 1024,
+          "height": 768,
+          "sha256": "4bf85f7af3c8fa2e80dd3af9444c9facdb723cd4bfedeb66de9f52c8f3b97749",
+          "sourceSha256": "4bf85f7af3c8fa2e80dd3af9444c9facdb723cd4bfedeb66de9f52c8f3b97749",
+          "boxes": [],
+          "reviewed": false
+        },
+        "inputBytesUnchanged": true,
+        "canonical": {
+          "width": 1024,
+          "height": 768,
+          "mime": "image/png",
+          "samples": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              229,
+              30,
+              60,
+              128
+            ],
+            [
+              30,
+              180,
+              210,
+              255
+            ],
+            [
+              230,
+              210,
+              40,
+              255
+            ]
+          ]
+        },
+        "thumbnail": {
+          "width": 256,
+          "height": 192,
+          "mime": "image/webp",
+          "samples": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              227,
+              30,
+              60,
+              128
+            ],
+            [
+              30,
+              180,
+              209,
+              255
+            ],
+            [
+              230,
+              210,
+              39,
+              255
+            ]
+          ]
+        },
+        "customThumbnail": {
+          "width": 64,
+          "height": 48,
+          "mime": "image/webp",
+          "samples": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              227,
+              30,
+              60,
+              128
+            ],
+            [
+              30,
+              180,
+              209,
+              255
+            ],
+            [
+              232,
+              209,
+              39,
+              255
+            ]
+          ]
+        },
+        "decoder": "createImageBitmap/from-image"
+      }
+    },
+    {
+      "name": "Corrupt image rejection",
+      "status": "pass",
+      "result": [
+        {
+          "name": "corrupt.jpg",
+          "rejected": true,
+          "errorName": "InvalidStateError",
+          "errorMessage": "The source image could not be decoded.",
+          "code": 11
+        },
+        {
+          "name": "truncated.png",
+          "rejected": true,
+          "errorName": "InvalidStateError",
+          "errorMessage": "The source image could not be decoded.",
+          "code": 11
+        },
+        {
+          "name": "empty.jpg",
+          "rejected": true,
+          "errorName": "Error",
+          "errorMessage": "IMAGE_FILE_TOO_LARGE",
+          "code": null
+        }
+      ]
+    }
+  ],
+  "pageErrors": [],
+  "nonGetRequests": [],
+  "sourceBefore": {
+    "src/data/media.js": "fd872fa7e17681f5abbbe040925af85fe66b75f411f5bc4f81253e012db0bbcb",
+    "src/data/project.js": "0123439d4ec6024c9794e24efe099db270f7b412fd6632bc901a08bfade82648"
+  },
+  "browser": "156.0.8078.4",
+  "sourceAfter": {
+    "src/data/media.js": "fd872fa7e17681f5abbbe040925af85fe66b75f411f5bc4f81253e012db0bbcb",
+    "src/data/project.js": "0123439d4ec6024c9794e24efe099db270f7b412fd6632bc901a08bfade82648"
+  },
+  "sourceStable": true,
+  "finishedAt": "2026-10-22T00:14:02.858Z",
+  "status": "pass"
+}

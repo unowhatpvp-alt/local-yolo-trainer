@@ -1,0 +1,5067 @@
+{
+  "recordedAt": "2026-10-21T23:33:17.888Z",
+  "dataset": {
+    "url": "https://www.cis.upenn.edu/~jshi/ped_html/PennFudanPed.zip",
+    "website": "https://www.cis.upenn.edu/~jshi/ped_html/",
+    "tutorial": "https://docs.pytorch.org/tutorials/intermediate/torchvision_tutorial.html",
+    "zipSha256": "9095a9613c95586f1c7f2a327d454833d16e0f5e17e5f83d35027ffd315b48e2",
+    "zipBytes": 53723336,
+    "license": "No explicit SPDX license found on original public dataset page; retain author attribution, use only local developer validation and do not redistribute the photographs with this application.",
+    "authors": [
+      "Liming Wang",
+      "Jianbo Shi",
+      "Gang Song",
+      "I-fan Shen"
+    ],
+    "publication": "Object Detection Combining Recognition and Segmentation, ACCV 2007"
+  },
+  "config": {
+    "mode": "pretrained",
+    "resolution": 128,
+    "batchSize": 4,
+    "epochs": 100,
+    "learningRate": 0.003,
+    "augment": true,
+    "seed": 12345,
+    "backend": "cpu"
+  },
+  "backend": {
+    "backend": "cpu",
+    "mode": "pretrained",
+    "batchSize": 4,
+    "classCount": 1,
+    "supported": true,
+    "verified": true,
+    "loss": 1.9430689811706543,
+    "parameterChanged": true,
+    "milliseconds": 49.26660000000004,
+    "scope": "actual frozen-feature spatial head forward, loss, gradients, Adam update",
+    "attempts": [
+      {
+        "backend": "cpu",
+        "mode": "pretrained",
+        "batchSize": 4,
+        "classCount": 1,
+        "supported": true,
+        "verified": true,
+        "loss": 1.9430689811706543,
+        "parameterChanged": true,
+        "milliseconds": 49.26660000000004,
+        "scope": "actual frozen-feature spatial head forward, loss, gradients, Adam update"
+      }
+    ],
+    "backboneBackend": "wasm"
+  },
+  "evidence": {
+    "runId": "b7bd3ac9-e3a5-4e75-880c-87cbdb09022e",
+    "steps": 800,
+    "firstLoss": 4.289271831512451,
+    "lastLoss": 0.11602051556110382,
+    "firstGradient": {
+      "norm": 1.9261585120816949,
+      "maxAbsolute": 0.9785265326499939,
+      "values": 4524,
+      "finite": true
+    },
+    "maxGradientNorm": 4.5035803038394775,
+    "initialWeightHash": "43645a32937d64bafbd6ec5c4ecaaf8684aa2a014eaecf606817c9107f402770",
+    "finalWeightHash": "372c848235cb96bd2148f04791cf0f5d2e7946109528a3456d18276959eda539",
+    "parametersChanged": true,
+    "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+    "datasetChanged": false,
+    "trainingImages": 32,
+    "validationImages": 8,
+    "initialMetrics": {
+      "available": true,
+      "images": 8,
+      "truePositives": 0,
+      "falsePositives": 0,
+      "falseNegatives": 21,
+      "precision50": null,
+      "recall50": 0,
+      "meanMatchedIou": null
+    },
+    "elapsedMs": 27371.7083,
+    "scope": "frozen YOLO26n features; spatial head parameters trained",
+    "limitations": [
+      "This is not full YOLO26 training."
+    ]
+  },
+  "metrics": {
+    "available": true,
+    "images": 8,
+    "truePositives": 14,
+    "falsePositives": 267,
+    "falseNegatives": 7,
+    "precision50": 0.0498220640569395,
+    "recall50": 0.6666666666666666,
+    "meanMatchedIou": 0.5967665826373597
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 4.180849969387054,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 0,
+        "falsePositives": 0,
+        "falseNegatives": 21,
+        "precision50": null,
+        "recall50": 0,
+        "meanMatchedIou": null
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 8
+    },
+    {
+      "epoch": 2,
+      "loss": 3.6593722105026245,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 0,
+        "falsePositives": 0,
+        "falseNegatives": 21,
+        "precision50": null,
+        "recall50": 0,
+        "meanMatchedIou": null
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 16
+    },
+    {
+      "epoch": 3,
+      "loss": 2.7546089589595795,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 5,
+        "falsePositives": 11,
+        "falseNegatives": 16,
+        "precision50": 0.3125,
+        "recall50": 0.23809523809523808,
+        "meanMatchedIou": 0.6079222049496285
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 24
+    },
+    {
+      "epoch": 4,
+      "loss": 1.7017933279275894,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 11,
+        "falsePositives": 199,
+        "falseNegatives": 10,
+        "precision50": 0.05238095238095238,
+        "recall50": 0.5238095238095238,
+        "meanMatchedIou": 0.6454624833317714
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 32
+    },
+    {
+      "epoch": 5,
+      "loss": 0.8239751681685448,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 11,
+        "falsePositives": 362,
+        "falseNegatives": 10,
+        "precision50": 0.029490616621983913,
+        "recall50": 0.5238095238095238,
+        "meanMatchedIou": 0.639293575574665
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 40
+    },
+    {
+      "epoch": 6,
+      "loss": 0.5765140578150749,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 10,
+        "falsePositives": 458,
+        "falseNegatives": 11,
+        "precision50": 0.021367521367521368,
+        "recall50": 0.47619047619047616,
+        "meanMatchedIou": 0.6123819457895398
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 48
+    },
+    {
+      "epoch": 7,
+      "loss": 0.5379896499216557,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 10,
+        "falsePositives": 569,
+        "falseNegatives": 11,
+        "precision50": 0.017271157167530225,
+        "recall50": 0.47619047619047616,
+        "meanMatchedIou": 0.5552765635145811
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 56
+    },
+    {
+      "epoch": 8,
+      "loss": 0.5097153931856155,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 10,
+        "falsePositives": 442,
+        "falseNegatives": 11,
+        "precision50": 0.022123893805309734,
+        "recall50": 0.47619047619047616,
+        "meanMatchedIou": 0.6321430105232554
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 64
+    },
+    {
+      "epoch": 9,
+      "loss": 0.49058447778224945,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 11,
+        "falsePositives": 463,
+        "falseNegatives": 10,
+        "precision50": 0.023206751054852322,
+        "recall50": 0.5238095238095238,
+        "meanMatchedIou": 0.5875122065349249
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 72
+    },
+    {
+      "epoch": 10,
+      "loss": 0.4437384456396103,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 10,
+        "falsePositives": 534,
+        "falseNegatives": 11,
+        "precision50": 0.01838235294117647,
+        "recall50": 0.47619047619047616,
+        "meanMatchedIou": 0.595500394512631
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 80
+    },
+    {
+      "epoch": 11,
+      "loss": 0.4557250775396824,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 13,
+        "falsePositives": 418,
+        "falseNegatives": 8,
+        "precision50": 0.030162412993039442,
+        "recall50": 0.6190476190476191,
+        "meanMatchedIou": 0.5955206507955629
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 88
+    },
+    {
+      "epoch": 12,
+      "loss": 0.4234348088502884,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 9,
+        "falsePositives": 458,
+        "falseNegatives": 12,
+        "precision50": 0.019271948608137045,
+        "recall50": 0.42857142857142855,
+        "meanMatchedIou": 0.5802799469584934
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 96
+    },
+    {
+      "epoch": 13,
+      "loss": 0.43055741116404533,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 9,
+        "falsePositives": 480,
+        "falseNegatives": 12,
+        "precision50": 0.018404907975460124,
+        "recall50": 0.42857142857142855,
+        "meanMatchedIou": 0.5756814748589809
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 104
+    },
+    {
+      "epoch": 14,
+      "loss": 0.4046606682240963,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 14,
+        "falsePositives": 418,
+        "falseNegatives": 7,
+        "precision50": 0.032407407407407406,
+        "recall50": 0.6666666666666666,
+        "meanMatchedIou": 0.5821218550835522
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 112
+    },
+    {
+      "epoch": 15,
+      "loss": 0.3889116980135441,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 13,
+        "falsePositives": 424,
+        "falseNegatives": 8,
+        "precision50": 0.029748283752860413,
+        "recall50": 0.6190476190476191,
+        "meanMatchedIou": 0.5702512730215716
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 120
+    },
+    {
+      "epoch": 16,
+      "loss": 0.3968721218407154,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 13,
+        "falsePositives": 438,
+        "falseNegatives": 8,
+        "precision50": 0.028824833702882482,
+        "recall50": 0.6190476190476191,
+        "meanMatchedIou": 0.5673260783684203
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 128
+    },
+    {
+      "epoch": 17,
+      "loss": 0.3647282011806965,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 14,
+        "falsePositives": 443,
+        "falseNegatives": 7,
+        "precision50": 0.030634573304157548,
+        "recall50": 0.6666666666666666,
+        "meanMatchedIou": 0.5691158017284222
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 136
+    },
+    {
+      "epoch": 18,
+      "loss": 0.3452494516968727,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 12,
+        "falsePositives": 447,
+        "falseNegatives": 9,
+        "precision50": 0.026143790849673203,
+        "recall50": 0.5714285714285714,
+        "meanMatchedIou": 0.5883798236049012
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 144
+    },
+    {
+      "epoch": 19,
+      "loss": 0.34479911252856255,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 13,
+        "falsePositives": 401,
+        "falseNegatives": 8,
+        "precision50": 0.03140096618357488,
+        "recall50": 0.6190476190476191,
+        "meanMatchedIou": 0.5881752345755604
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 152
+    },
+    {
+      "epoch": 20,
+      "loss": 0.33992817625403404,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 13,
+        "falsePositives": 430,
+        "falseNegatives": 8,
+        "precision50": 0.029345372460496615,
+        "recall50": 0.6190476190476191,
+        "meanMatchedIou": 0.5752785711010294
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 160
+    },
+    {
+      "epoch": 21,
+      "loss": 0.3075028881430626,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 14,
+        "falsePositives": 415,
+        "falseNegatives": 7,
+        "precision50": 0.03263403263403263,
+        "recall50": 0.6666666666666666,
+        "meanMatchedIou": 0.5727198216606039
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 168
+    },
+    {
+      "epoch": 22,
+      "loss": 0.31967777013778687,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 14,
+        "falsePositives": 405,
+        "falseNegatives": 7,
+        "precision50": 0.03341288782816229,
+        "recall50": 0.6666666666666666,
+        "meanMatchedIou": 0.5703044686561913
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 176
+    },
+    {
+      "epoch": 23,
+      "loss": 0.31850530952215195,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 13,
+        "falsePositives": 373,
+        "falseNegatives": 8,
+        "precision50": 0.03367875647668394,
+        "recall50": 0.6190476190476191,
+        "meanMatchedIou": 0.6049872243475485
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 184
+    },
+    {
+      "epoch": 24,
+      "loss": 0.3450811691582203,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 11,
+        "falsePositives": 429,
+        "falseNegatives": 10,
+        "precision50": 0.025,
+        "recall50": 0.5238095238095238,
+        "meanMatchedIou": 0.5688146426798892
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 192
+    },
+    {
+      "epoch": 25,
+      "loss": 0.31382748670876026,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 13,
+        "falsePositives": 374,
+        "falseNegatives": 8,
+        "precision50": 0.03359173126614987,
+        "recall50": 0.6190476190476191,
+        "meanMatchedIou": 0.599670454028344
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 200
+    },
+    {
+      "epoch": 26,
+      "loss": 0.31927564926445484,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 14,
+        "falsePositives": 390,
+        "falseNegatives": 7,
+        "precision50": 0.034653465346534656,
+        "recall50": 0.6666666666666666,
+        "meanMatchedIou": 0.5722582986462866
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 208
+    },
+    {
+      "epoch": 27,
+      "loss": 0.29251439310610294,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 14,
+        "falsePositives": 388,
+        "falseNegatives": 7,
+        "precision50": 0.03482587064676617,
+        "recall50": 0.6666666666666666,
+        "meanMatchedIou": 0.5698801005742686
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 216
+    },
+    {
+      "epoch": 28,
+      "loss": 0.28153638541698456,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 12,
+        "falsePositives": 355,
+        "falseNegatives": 9,
+        "precision50": 0.0326975476839237,
+        "recall50": 0.5714285714285714,
+        "meanMatchedIou": 0.6091913984919839
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 224
+    },
+    {
+      "epoch": 29,
+      "loss": 0.28037799522280693,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 13,
+        "falsePositives": 351,
+        "falseNegatives": 8,
+        "precision50": 0.03571428571428571,
+        "recall50": 0.6190476190476191,
+        "meanMatchedIou": 0.5945966527424467
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 232
+    },
+    {
+      "epoch": 30,
+      "loss": 0.28663889691233635,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 14,
+        "falsePositives": 373,
+        "falseNegatives": 7,
+        "precision50": 0.03617571059431524,
+        "recall50": 0.6666666666666666,
+        "meanMatchedIou": 0.5712339876922213
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 240
+    },
+    {
+      "epoch": 31,
+      "loss": 0.2736338898539543,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 14,
+        "falsePositives": 364,
+        "falseNegatives": 7,
+        "precision50": 0.037037037037037035,
+        "recall50": 0.6666666666666666,
+        "meanMatchedIou": 0.590605945369618
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 248
+    },
+    {
+      "epoch": 32,
+      "loss": 0.2766968905925751,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 14,
+        "falsePositives": 351,
+        "falseNegatives": 7,
+        "precision50": 0.038356164383561646,
+        "recall50": 0.6666666666666666,
+        "meanMatchedIou": 0.5801826807080289
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 256
+    },
+    {
+      "epoch": 33,
+      "loss": 0.2752000968903303,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 14,
+        "falsePositives": 361,
+        "falseNegatives": 7,
+        "precision50": 0.037333333333333336,
+        "recall50": 0.6666666666666666,
+        "meanMatchedIou": 0.5702875571483775
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 264
+    },
+    {
+      "epoch": 34,
+      "loss": 0.25924211740493774,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 14,
+        "falsePositives": 335,
+        "falseNegatives": 7,
+        "precision50": 0.04011461318051576,
+        "recall50": 0.6666666666666666,
+        "meanMatchedIou": 0.581220665775346
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 272
+    },
+    {
+      "epoch": 35,
+      "loss": 0.2647589650005102,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 14,
+        "falsePositives": 340,
+        "falseNegatives": 7,
+        "precision50": 0.03954802259887006,
+        "recall50": 0.6666666666666666,
+        "meanMatchedIou": 0.5760552620696966
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 280
+    },
+    {
+      "epoch": 36,
+      "loss": 0.2537318039685488,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 14,
+        "falsePositives": 321,
+        "falseNegatives": 7,
+        "precision50": 0.041791044776119404,
+        "recall50": 0.6666666666666666,
+        "meanMatchedIou": 0.5863249648572866
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 288
+    },
+    {
+      "epoch": 37,
+      "loss": 0.2533933278173208,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 13,
+        "falsePositives": 314,
+        "falseNegatives": 8,
+        "precision50": 0.039755351681957186,
+        "recall50": 0.6190476190476191,
+        "meanMatchedIou": 0.5955964617386861
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 296
+    },
+    {
+      "epoch": 38,
+      "loss": 0.24191196635365486,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 12,
+        "falsePositives": 337,
+        "falseNegatives": 9,
+        "precision50": 0.034383954154727794,
+        "recall50": 0.5714285714285714,
+        "meanMatchedIou": 0.5808124309493236
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 304
+    },
+    {
+      "epoch": 39,
+      "loss": 0.24508685246109962,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 14,
+        "falsePositives": 316,
+        "falseNegatives": 7,
+        "precision50": 0.04242424242424243,
+        "recall50": 0.6666666666666666,
+        "meanMatchedIou": 0.5833968112981764
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 312
+    },
+    {
+      "epoch": 40,
+      "loss": 0.2423879411071539,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 14,
+        "falsePositives": 312,
+        "falseNegatives": 7,
+        "precision50": 0.04294478527607362,
+        "recall50": 0.6666666666666666,
+        "meanMatchedIou": 0.5876987114757427
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 320
+    },
+    {
+      "epoch": 41,
+      "loss": 0.23032785579562187,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 14,
+        "falsePositives": 323,
+        "falseNegatives": 7,
+        "precision50": 0.04154302670623145,
+        "recall50": 0.6666666666666666,
+        "meanMatchedIou": 0.5753755963122137
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 328
+    },
+    {
+      "epoch": 42,
+      "loss": 0.235245818272233,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 13,
+        "falsePositives": 305,
+        "falseNegatives": 8,
+        "precision50": 0.040880503144654086,
+        "recall50": 0.6190476190476191,
+        "meanMatchedIou": 0.580329618945242
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 336
+    },
+    {
+      "epoch": 43,
+      "loss": 0.23274776712059975,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 13,
+        "falsePositives": 305,
+        "falseNegatives": 8,
+        "precision50": 0.040880503144654086,
+        "recall50": 0.6190476190476191,
+        "meanMatchedIou": 0.5907813888236586
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 344
+    },
+    {
+      "epoch": 44,
+      "loss": 0.2314193807542324,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 12,
+        "falsePositives": 321,
+        "falseNegatives": 9,
+        "precision50": 0.036036036036036036,
+        "recall50": 0.5714285714285714,
+        "meanMatchedIou": 0.5845919129860685
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 352
+    },
+    {
+      "epoch": 45,
+      "loss": 0.2261961977928877,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 13,
+        "falsePositives": 289,
+        "falseNegatives": 8,
+        "precision50": 0.04304635761589404,
+        "recall50": 0.6190476190476191,
+        "meanMatchedIou": 0.5972174593545229
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 360
+    },
+    {
+      "epoch": 46,
+      "loss": 0.23257693834602833,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 12,
+        "falsePositives": 340,
+        "falseNegatives": 9,
+        "precision50": 0.03409090909090909,
+        "recall50": 0.5714285714285714,
+        "meanMatchedIou": 0.5762096885240986
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 368
+    },
+    {
+      "epoch": 47,
+      "loss": 0.22415479086339474,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 13,
+        "falsePositives": 288,
+        "falseNegatives": 8,
+        "precision50": 0.04318936877076412,
+        "recall50": 0.6190476190476191,
+        "meanMatchedIou": 0.5819659014225795
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 376
+    },
+    {
+      "epoch": 48,
+      "loss": 0.22729980200529099,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 12,
+        "falsePositives": 299,
+        "falseNegatives": 9,
+        "precision50": 0.03858520900321544,
+        "recall50": 0.5714285714285714,
+        "meanMatchedIou": 0.5784971207699324
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 384
+    },
+    {
+      "epoch": 49,
+      "loss": 0.2145270463079214,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 13,
+        "falsePositives": 314,
+        "falseNegatives": 8,
+        "precision50": 0.039755351681957186,
+        "recall50": 0.6190476190476191,
+        "meanMatchedIou": 0.5630542079900767
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 392
+    },
+    {
+      "epoch": 50,
+      "loss": 0.2199922725558281,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 12,
+        "falsePositives": 295,
+        "falseNegatives": 9,
+        "precision50": 0.03908794788273615,
+        "recall50": 0.5714285714285714,
+        "meanMatchedIou": 0.5719599170020018
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 400
+    },
+    {
+      "epoch": 51,
+      "loss": 0.206199673935771,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 13,
+        "falsePositives": 290,
+        "falseNegatives": 8,
+        "precision50": 0.0429042904290429,
+        "recall50": 0.6190476190476191,
+        "meanMatchedIou": 0.5728252512192877
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 408
+    },
+    {
+      "epoch": 52,
+      "loss": 0.2074952870607376,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 13,
+        "falsePositives": 312,
+        "falseNegatives": 8,
+        "precision50": 0.04,
+        "recall50": 0.6190476190476191,
+        "meanMatchedIou": 0.5666907373587126
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 416
+    },
+    {
+      "epoch": 53,
+      "loss": 0.200182581320405,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 12,
+        "falsePositives": 284,
+        "falseNegatives": 9,
+        "precision50": 0.04054054054054054,
+        "recall50": 0.5714285714285714,
+        "meanMatchedIou": 0.5770791912172222
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 424
+    },
+    {
+      "epoch": 54,
+      "loss": 0.19567366130650043,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 13,
+        "falsePositives": 297,
+        "falseNegatives": 8,
+        "precision50": 0.041935483870967745,
+        "recall50": 0.6190476190476191,
+        "meanMatchedIou": 0.572514891665734
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 432
+    },
+    {
+      "epoch": 55,
+      "loss": 0.1966811642050743,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 13,
+        "falsePositives": 302,
+        "falseNegatives": 8,
+        "precision50": 0.04126984126984127,
+        "recall50": 0.6190476190476191,
+        "meanMatchedIou": 0.5954068531013024
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 440
+    },
+    {
+      "epoch": 56,
+      "loss": 0.1974078007042408,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 13,
+        "falsePositives": 291,
+        "falseNegatives": 8,
+        "precision50": 0.04276315789473684,
+        "recall50": 0.6190476190476191,
+        "meanMatchedIou": 0.5674759215324016
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 448
+    },
+    {
+      "epoch": 57,
+      "loss": 0.20384076610207558,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 12,
+        "falsePositives": 290,
+        "falseNegatives": 9,
+        "precision50": 0.039735099337748346,
+        "recall50": 0.5714285714285714,
+        "meanMatchedIou": 0.5689562453965314
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 456
+    },
+    {
+      "epoch": 58,
+      "loss": 0.19212305545806885,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 12,
+        "falsePositives": 291,
+        "falseNegatives": 9,
+        "precision50": 0.039603960396039604,
+        "recall50": 0.5714285714285714,
+        "meanMatchedIou": 0.5926704834234706
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 464
+    },
+    {
+      "epoch": 59,
+      "loss": 0.20097887516021729,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 13,
+        "falsePositives": 279,
+        "falseNegatives": 8,
+        "precision50": 0.04452054794520548,
+        "recall50": 0.6190476190476191,
+        "meanMatchedIou": 0.5894938166818181
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 472
+    },
+    {
+      "epoch": 60,
+      "loss": 0.1913012433797121,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 12,
+        "falsePositives": 298,
+        "falseNegatives": 9,
+        "precision50": 0.03870967741935484,
+        "recall50": 0.5714285714285714,
+        "meanMatchedIou": 0.5852211441545213
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 480
+    },
+    {
+      "epoch": 61,
+      "loss": 0.18717569299042225,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 13,
+        "falsePositives": 280,
+        "falseNegatives": 8,
+        "precision50": 0.04436860068259386,
+        "recall50": 0.6190476190476191,
+        "meanMatchedIou": 0.5835624266192505
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 488
+    },
+    {
+      "epoch": 62,
+      "loss": 0.18322222121059895,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 12,
+        "falsePositives": 291,
+        "falseNegatives": 9,
+        "precision50": 0.039603960396039604,
+        "recall50": 0.5714285714285714,
+        "meanMatchedIou": 0.5938605597412075
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 496
+    },
+    {
+      "epoch": 63,
+      "loss": 0.17923133447766304,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 12,
+        "falsePositives": 297,
+        "falseNegatives": 9,
+        "precision50": 0.038834951456310676,
+        "recall50": 0.5714285714285714,
+        "meanMatchedIou": 0.5890225684277254
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 504
+    },
+    {
+      "epoch": 64,
+      "loss": 0.17868053168058395,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 13,
+        "falsePositives": 291,
+        "falseNegatives": 8,
+        "precision50": 0.04276315789473684,
+        "recall50": 0.6190476190476191,
+        "meanMatchedIou": 0.5798369239817982
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 512
+    },
+    {
+      "epoch": 65,
+      "loss": 0.17505391873419285,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 12,
+        "falsePositives": 286,
+        "falseNegatives": 9,
+        "precision50": 0.040268456375838924,
+        "recall50": 0.5714285714285714,
+        "meanMatchedIou": 0.5898474810028818
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 520
+    },
+    {
+      "epoch": 66,
+      "loss": 0.17531703040003777,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 12,
+        "falsePositives": 279,
+        "falseNegatives": 9,
+        "precision50": 0.041237113402061855,
+        "recall50": 0.5714285714285714,
+        "meanMatchedIou": 0.5847485108121723
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 528
+    },
+    {
+      "epoch": 67,
+      "loss": 0.1742097521200776,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 12,
+        "falsePositives": 277,
+        "falseNegatives": 9,
+        "precision50": 0.04152249134948097,
+        "recall50": 0.5714285714285714,
+        "meanMatchedIou": 0.5969377423511887
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 536
+    },
+    {
+      "epoch": 68,
+      "loss": 0.17701981775462627,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 12,
+        "falsePositives": 282,
+        "falseNegatives": 9,
+        "precision50": 0.04081632653061224,
+        "recall50": 0.5714285714285714,
+        "meanMatchedIou": 0.586731273970654
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 544
+    },
+    {
+      "epoch": 69,
+      "loss": 0.17294435761868954,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 12,
+        "falsePositives": 292,
+        "falseNegatives": 9,
+        "precision50": 0.039473684210526314,
+        "recall50": 0.5714285714285714,
+        "meanMatchedIou": 0.5854910469336103
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 552
+    },
+    {
+      "epoch": 70,
+      "loss": 0.18064279854297638,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 12,
+        "falsePositives": 282,
+        "falseNegatives": 9,
+        "precision50": 0.04081632653061224,
+        "recall50": 0.5714285714285714,
+        "meanMatchedIou": 0.5851148670578817
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 560
+    },
+    {
+      "epoch": 71,
+      "loss": 0.17801357805728912,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 12,
+        "falsePositives": 275,
+        "falseNegatives": 9,
+        "precision50": 0.041811846689895474,
+        "recall50": 0.5714285714285714,
+        "meanMatchedIou": 0.5859998014067104
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 568
+    },
+    {
+      "epoch": 72,
+      "loss": 0.17057566344738007,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 11,
+        "falsePositives": 294,
+        "falseNegatives": 10,
+        "precision50": 0.036065573770491806,
+        "recall50": 0.5238095238095238,
+        "meanMatchedIou": 0.611366499260573
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 576
+    },
+    {
+      "epoch": 73,
+      "loss": 0.17252685502171516,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 12,
+        "falsePositives": 270,
+        "falseNegatives": 9,
+        "precision50": 0.0425531914893617,
+        "recall50": 0.5714285714285714,
+        "meanMatchedIou": 0.5844637993485912
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 584
+    },
+    {
+      "epoch": 74,
+      "loss": 0.1674842033535242,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 10,
+        "falsePositives": 283,
+        "falseNegatives": 11,
+        "precision50": 0.034129692832764506,
+        "recall50": 0.47619047619047616,
+        "meanMatchedIou": 0.6073955972662777
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 592
+    },
+    {
+      "epoch": 75,
+      "loss": 0.16039310581982136,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 12,
+        "falsePositives": 273,
+        "falseNegatives": 9,
+        "precision50": 0.042105263157894736,
+        "recall50": 0.5714285714285714,
+        "meanMatchedIou": 0.6008106601295891
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 600
+    },
+    {
+      "epoch": 76,
+      "loss": 0.1602027751505375,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 12,
+        "falsePositives": 256,
+        "falseNegatives": 9,
+        "precision50": 0.04477611940298507,
+        "recall50": 0.5714285714285714,
+        "meanMatchedIou": 0.5884110920926864
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 608
+    },
+    {
+      "epoch": 77,
+      "loss": 0.1586093958467245,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 12,
+        "falsePositives": 264,
+        "falseNegatives": 9,
+        "precision50": 0.043478260869565216,
+        "recall50": 0.5714285714285714,
+        "meanMatchedIou": 0.5947481504024771
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 616
+    },
+    {
+      "epoch": 78,
+      "loss": 0.1666210237890482,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 13,
+        "falsePositives": 254,
+        "falseNegatives": 8,
+        "precision50": 0.04868913857677903,
+        "recall50": 0.6190476190476191,
+        "meanMatchedIou": 0.5894731590364153
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 624
+    },
+    {
+      "epoch": 79,
+      "loss": 0.15920701622962952,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 12,
+        "falsePositives": 274,
+        "falseNegatives": 9,
+        "precision50": 0.04195804195804196,
+        "recall50": 0.5714285714285714,
+        "meanMatchedIou": 0.5996705718287764
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 632
+    },
+    {
+      "epoch": 80,
+      "loss": 0.1627463847398758,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 12,
+        "falsePositives": 266,
+        "falseNegatives": 9,
+        "precision50": 0.04316546762589928,
+        "recall50": 0.5714285714285714,
+        "meanMatchedIou": 0.5890166987954697
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 640
+    },
+    {
+      "epoch": 81,
+      "loss": 0.1560286208987236,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 13,
+        "falsePositives": 276,
+        "falseNegatives": 8,
+        "precision50": 0.04498269896193772,
+        "recall50": 0.6190476190476191,
+        "meanMatchedIou": 0.6082020627924245
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 648
+    },
+    {
+      "epoch": 82,
+      "loss": 0.15028332080692053,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 12,
+        "falsePositives": 256,
+        "falseNegatives": 9,
+        "precision50": 0.04477611940298507,
+        "recall50": 0.5714285714285714,
+        "meanMatchedIou": 0.6015050381671702
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 656
+    },
+    {
+      "epoch": 83,
+      "loss": 0.14879332296550274,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 12,
+        "falsePositives": 257,
+        "falseNegatives": 9,
+        "precision50": 0.04460966542750929,
+        "recall50": 0.5714285714285714,
+        "meanMatchedIou": 0.5903523387444984
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 664
+    },
+    {
+      "epoch": 84,
+      "loss": 0.14649825543165207,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 13,
+        "falsePositives": 259,
+        "falseNegatives": 8,
+        "precision50": 0.04779411764705882,
+        "recall50": 0.6190476190476191,
+        "meanMatchedIou": 0.6063242989864959
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 672
+    },
+    {
+      "epoch": 85,
+      "loss": 0.14858925063163042,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 12,
+        "falsePositives": 251,
+        "falseNegatives": 9,
+        "precision50": 0.045627376425855515,
+        "recall50": 0.5714285714285714,
+        "meanMatchedIou": 0.5919662724713962
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 680
+    },
+    {
+      "epoch": 86,
+      "loss": 0.1492653340101242,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 13,
+        "falsePositives": 257,
+        "falseNegatives": 8,
+        "precision50": 0.04814814814814815,
+        "recall50": 0.6190476190476191,
+        "meanMatchedIou": 0.5990964152833088
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 688
+    },
+    {
+      "epoch": 87,
+      "loss": 0.14210788998752832,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 13,
+        "falsePositives": 261,
+        "falseNegatives": 8,
+        "precision50": 0.04744525547445255,
+        "recall50": 0.6190476190476191,
+        "meanMatchedIou": 0.6019147219803279
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 696
+    },
+    {
+      "epoch": 88,
+      "loss": 0.14638366736471653,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 13,
+        "falsePositives": 267,
+        "falseNegatives": 8,
+        "precision50": 0.04642857142857143,
+        "recall50": 0.6190476190476191,
+        "meanMatchedIou": 0.6068190227816113
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 704
+    },
+    {
+      "epoch": 89,
+      "loss": 0.15160289220511913,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 12,
+        "falsePositives": 267,
+        "falseNegatives": 9,
+        "precision50": 0.043010752688172046,
+        "recall50": 0.5714285714285714,
+        "meanMatchedIou": 0.6096669990348721
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 712
+    },
+    {
+      "epoch": 90,
+      "loss": 0.146063013933599,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 12,
+        "falsePositives": 253,
+        "falseNegatives": 9,
+        "precision50": 0.045283018867924525,
+        "recall50": 0.5714285714285714,
+        "meanMatchedIou": 0.6012285328823285
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 720
+    },
+    {
+      "epoch": 91,
+      "loss": 0.13826500438153744,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 13,
+        "falsePositives": 265,
+        "falseNegatives": 8,
+        "precision50": 0.046762589928057555,
+        "recall50": 0.6190476190476191,
+        "meanMatchedIou": 0.598665571352208
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 728
+    },
+    {
+      "epoch": 92,
+      "loss": 0.14305953867733479,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 13,
+        "falsePositives": 258,
+        "falseNegatives": 8,
+        "precision50": 0.04797047970479705,
+        "recall50": 0.6190476190476191,
+        "meanMatchedIou": 0.6090241342026815
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 736
+    },
+    {
+      "epoch": 93,
+      "loss": 0.1414684997871518,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 12,
+        "falsePositives": 258,
+        "falseNegatives": 9,
+        "precision50": 0.044444444444444446,
+        "recall50": 0.5714285714285714,
+        "meanMatchedIou": 0.597128121225034
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 744
+    },
+    {
+      "epoch": 94,
+      "loss": 0.1340033859014511,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 12,
+        "falsePositives": 267,
+        "falseNegatives": 9,
+        "precision50": 0.043010752688172046,
+        "recall50": 0.5714285714285714,
+        "meanMatchedIou": 0.5978076934846186
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 752
+    },
+    {
+      "epoch": 95,
+      "loss": 0.14610002376139164,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 13,
+        "falsePositives": 269,
+        "falseNegatives": 8,
+        "precision50": 0.04609929078014184,
+        "recall50": 0.6190476190476191,
+        "meanMatchedIou": 0.6172374722037078
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 760
+    },
+    {
+      "epoch": 96,
+      "loss": 0.13336179964244366,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 14,
+        "falsePositives": 263,
+        "falseNegatives": 7,
+        "precision50": 0.05054151624548736,
+        "recall50": 0.6666666666666666,
+        "meanMatchedIou": 0.609395641449525
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 768
+    },
+    {
+      "epoch": 97,
+      "loss": 0.13186893984675407,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 14,
+        "falsePositives": 263,
+        "falseNegatives": 7,
+        "precision50": 0.05054151624548736,
+        "recall50": 0.6666666666666666,
+        "meanMatchedIou": 0.6078351980477773
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 776
+    },
+    {
+      "epoch": 98,
+      "loss": 0.13991826213896275,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 14,
+        "falsePositives": 258,
+        "falseNegatives": 7,
+        "precision50": 0.051470588235294115,
+        "recall50": 0.6666666666666666,
+        "meanMatchedIou": 0.6098728416254089
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 784
+    },
+    {
+      "epoch": 99,
+      "loss": 0.1352333016693592,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 13,
+        "falsePositives": 257,
+        "falseNegatives": 8,
+        "precision50": 0.04814814814814815,
+        "recall50": 0.6190476190476191,
+        "meanMatchedIou": 0.5851419384730789
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 792
+    },
+    {
+      "epoch": 100,
+      "loss": 0.13195262663066387,
+      "metrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 14,
+        "falsePositives": 267,
+        "falseNegatives": 7,
+        "precision50": 0.0498220640569395,
+        "recall50": 0.6666666666666666,
+        "meanMatchedIou": 0.5967665826373597
+      },
+      "datasetHash": "b49bb64d60ca825dc655d6e6762849ecc167e64f874542c2a36932d1c02c3777",
+      "step": 800
+    }
+  ],
+  "predictions": [
+    {
+      "id": "PennPed00081",
+      "truth": [
+        {
+          "id": "PennPed00081-1",
+          "classId": 0,
+          "x": 147,
+          "y": 84,
+          "width": 92,
+          "height": 282
+        },
+        {
+          "id": "PennPed00081-2",
+          "classId": 0,
+          "x": 232,
+          "y": 53,
+          "width": 105,
+          "height": 307
+        },
+        {
+          "id": "PennPed00081-3",
+          "classId": 0,
+          "x": 329,
+          "y": 74,
+          "width": 126,
+          "height": 292
+        }
+      ],
+      "items": [
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9985761299077448,
+          "box": {
+            "x": 308.7994627906093,
+            "y": 93.11309058504486,
+            "width": 99.17837950020999,
+            "height": 293.88690941495514
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.998350531102683,
+          "box": {
+            "x": 266.3827117171664,
+            "y": 36.39798317633991,
+            "width": 67.85747604880254,
+            "height": 208.92514880589712
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9969356393393731,
+          "box": {
+            "x": 189.7063081293231,
+            "y": 46.37519917318853,
+            "width": 83.09326159165161,
+            "height": 252.62459916467188
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9961677039543105,
+          "box": {
+            "x": 347.24591588790145,
+            "y": 91.82879515076993,
+            "width": 61.39009642882769,
+            "height": 159.18992629467138
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9923691584060822,
+          "box": {
+            "x": 351.3742692276528,
+            "y": 29.835214091862277,
+            "width": 89.84693465459617,
+            "height": 279.3594800633588
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9878822165535547,
+          "box": {
+            "x": 366.97349482213696,
+            "y": 166.3208539415221,
+            "width": 84.53195328489011,
+            "height": 220.6791460584779
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.987311876463466,
+          "box": {
+            "x": 240.13020379087683,
+            "y": 185.63449736863924,
+            "width": 94.88327374611893,
+            "height": 201.36550263136076
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9826531569599702,
+          "box": {
+            "x": 270.9224934651758,
+            "y": 30.39999819869264,
+            "width": 123.55310488516824,
+            "height": 301.76427546856115
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9826291545423004,
+          "box": {
+            "x": 217.94629566390074,
+            "y": 31.0200564832956,
+            "width": 98.69397503000238,
+            "height": 271.0516753448104
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9805326056097411,
+          "box": {
+            "x": 125.64994253968095,
+            "y": 102.68435483919801,
+            "width": 142.14931239815175,
+            "height": 284.315645160802
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.98001212077328,
+          "box": {
+            "x": 282.68157964642586,
+            "y": 0,
+            "width": 241.8371248860031,
+            "height": 387
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9681545107216102,
+          "box": {
+            "x": 179.65322044758062,
+            "y": 158.83246623983828,
+            "width": 74.6842781602962,
+            "height": 198.23676363381222
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9599406509671717,
+          "box": {
+            "x": 185.95938750823188,
+            "y": 0,
+            "width": 192.2770177729326,
+            "height": 283.28796822252446
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9528292395781399,
+          "box": {
+            "x": 97.22404852392552,
+            "y": 71.44039583492088,
+            "width": 77.74199380103181,
+            "height": 198.64961725876879
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9392465731985649,
+          "box": {
+            "x": 42.71014449235312,
+            "y": 0,
+            "width": 171.01414636977327,
+            "height": 268.34981900763205
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9392123890804734,
+          "box": {
+            "x": 397.89781945125327,
+            "y": 272.5335178955218,
+            "width": 74.15029282513962,
+            "height": 114.46648210447819
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9027600205698891,
+          "box": {
+            "x": 407.70406033903845,
+            "y": 149.4765367849191,
+            "width": 114.53482702646949,
+            "height": 237.5234632150809
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8761630432906274,
+          "box": {
+            "x": 194.4938010110075,
+            "y": 301.33495237619513,
+            "width": 76.91005786555692,
+            "height": 85.66504762380487
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8647329517297441,
+          "box": {
+            "x": 18.698658666366033,
+            "y": 0,
+            "width": 91.72472745182053,
+            "height": 255.73123715886086
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8563421292572444,
+          "box": {
+            "x": 382.11768872360517,
+            "y": 96.82958287013109,
+            "width": 103.44273441033988,
+            "height": 223.53286377067985
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8032383899661266,
+          "box": {
+            "x": 467.1775938082839,
+            "y": 291.3696409983765,
+            "width": 93.82240619171608,
+            "height": 95.6303590016235
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.7990237172087257,
+          "box": {
+            "x": 0,
+            "y": 210.2372650286092,
+            "width": 159.89663373830612,
+            "height": 176.7627349713908
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.7452783635741683,
+          "box": {
+            "x": 524.3368289425275,
+            "y": 263.826296022783,
+            "width": 36.66317105747248,
+            "height": 123.17370397721697
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.701136768272772,
+          "box": {
+            "x": 166.01127534021415,
+            "y": 197.22224676077732,
+            "width": 132.45009627700247,
+            "height": 189.77775323922268
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.6848330315744847,
+          "box": {
+            "x": 491.45150760081214,
+            "y": 125.30026904345905,
+            "width": 69.54849239918786,
+            "height": 177.54574965588304
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.6731747828727604,
+          "box": {
+            "x": 291.81454626576186,
+            "y": 232.9414668069888,
+            "width": 94.96943679031727,
+            "height": 154.0585331930112
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.6477400114442999,
+          "box": {
+            "x": 0,
+            "y": 121.75414766749584,
+            "width": 71.18999244644836,
+            "height": 248.20715363359244
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.587504400729334,
+          "box": {
+            "x": 50.71897850045354,
+            "y": 0,
+            "width": 113.18002390309965,
+            "height": 145.65992427811136
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.5725765604686853,
+          "box": {
+            "x": 0,
+            "y": 46.824193156708304,
+            "width": 54.16940023561597,
+            "height": 191.37248482262584
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.4511409502559122,
+          "box": {
+            "x": 219.86508766943527,
+            "y": 288.49963292154496,
+            "width": 80.15015227917999,
+            "height": 98.50036707845504
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.36797364377646985,
+          "box": {
+            "x": 92.1210513468051,
+            "y": 223.4216490472531,
+            "width": 145.6365105360056,
+            "height": 163.5783509527469
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.3465960986369659,
+          "box": {
+            "x": 411.0133822234933,
+            "y": 0,
+            "width": 120.09219163592002,
+            "height": 235.1144589831843
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.28334808129317796,
+          "box": {
+            "x": 316.91305825351975,
+            "y": 0,
+            "width": 104.49450893428974,
+            "height": 169.63099569418964
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.2679254303268549,
+          "box": {
+            "x": 431.998581394739,
+            "y": 0,
+            "width": 129.001418605261,
+            "height": 130.40542390600663
+          }
+        }
+      ],
+      "sourceWidth": 561,
+      "sourceHeight": 387,
+      "latency": 42.24170000000231,
+      "backend": "cpu",
+      "backboneBackend": "wasm",
+      "architecture": "yolo26n-frozen-head-v1"
+    },
+    {
+      "id": "FudanPed00068",
+      "truth": [
+        {
+          "id": "FudanPed00068-1",
+          "classId": 0,
+          "x": 248,
+          "y": 65,
+          "width": 70,
+          "height": 296
+        }
+      ],
+      "items": [
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.999713061124148,
+          "box": {
+            "x": 272.50078691851155,
+            "y": 96.90692355546098,
+            "width": 36.616593871761324,
+            "height": 129.52603329179522
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.99954167399275,
+          "box": {
+            "x": 246.5901841518402,
+            "y": 105.99610586669735,
+            "width": 84.42891393559725,
+            "height": 261.3420223499807
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.99579992455635,
+          "box": {
+            "x": 25.146063832243517,
+            "y": 100.95862900314367,
+            "width": 55.56890535945546,
+            "height": 105.9930921910211
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9952049717131466,
+          "box": {
+            "x": 260.3961669648649,
+            "y": 253.9241573882287,
+            "width": 59.57972222436484,
+            "height": 144.0758426117713
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9852566814622832,
+          "box": {
+            "x": 221.63409662463886,
+            "y": 0,
+            "width": 139.95192990811955,
+            "height": 260.33227977097613
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9827862790993444,
+          "box": {
+            "x": 310.15343542554405,
+            "y": 86.81719661829078,
+            "width": 51.580977203798454,
+            "height": 152.98038421309926
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9748554046243674,
+          "box": {
+            "x": 40.71949909136876,
+            "y": 132.61097733958388,
+            "width": 62.126697787834644,
+            "height": 108.53731564943641
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9741018570365795,
+          "box": {
+            "x": 22.617250923807294,
+            "y": 135.94627872941007,
+            "width": 53.52503518320364,
+            "height": 169.71074803036717
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9211996469753142,
+          "box": {
+            "x": 290.40797739014647,
+            "y": 0,
+            "width": 75.00724330928517,
+            "height": 128.78878643346667
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8970121836884745,
+          "box": {
+            "x": 253.72614690785733,
+            "y": 159.45132155599023,
+            "width": 48.52952111380037,
+            "height": 94.23163808642411
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8906509305716674,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 81.20232672989776,
+            "height": 196.55856044960302
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8867850428094629,
+          "box": {
+            "x": 145.98360554470014,
+            "y": 0,
+            "width": 116.15773674574473,
+            "height": 261.0988180405416
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8750770445237656,
+          "box": {
+            "x": 346.12620981073024,
+            "y": 87.74512252968174,
+            "width": 28.873790189269755,
+            "height": 145.3376376966041
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8704833406921703,
+          "box": {
+            "x": 31.892362527275495,
+            "y": 0,
+            "width": 130.15902472506122,
+            "height": 290.2488228980478
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8448662259318304,
+          "box": {
+            "x": 228.47647962357703,
+            "y": 192.2387591285105,
+            "width": 64.91218907442155,
+            "height": 186.34379065042808
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.811311381234295,
+          "box": {
+            "x": 357.3912087990656,
+            "y": 0,
+            "width": 17.608791200934377,
+            "height": 125.81263331568024
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.7875191306493969,
+          "box": {
+            "x": 349.01846981913644,
+            "y": 142.23635395010356,
+            "width": 25.981530180863558,
+            "height": 139.53965004325389
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.7776226840069468,
+          "box": {
+            "x": 359.6248771691534,
+            "y": 72.60651808949875,
+            "width": 15.375122830846578,
+            "height": 130.34965394606843
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.7365187859354863,
+          "box": {
+            "x": 155.9250779112385,
+            "y": 107.4801795520658,
+            "width": 85.50146007257388,
+            "height": 154.07325775632694
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.712284760843378,
+          "box": {
+            "x": 174.06646895812,
+            "y": 0,
+            "width": 55.78226969890889,
+            "height": 129.14255163741447
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.7050380902368873,
+          "box": {
+            "x": 101.49994186748171,
+            "y": 106.11286030544439,
+            "width": 59.26464513161446,
+            "height": 126.2228390638566
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.6615677702241614,
+          "box": {
+            "x": 181.5350193535763,
+            "y": 109.00510459508068,
+            "width": 120.35138769790737,
+            "height": 247.0551674445063
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.5853348462744491,
+          "box": {
+            "x": 138.24801081202102,
+            "y": 94.54105926053099,
+            "width": 63.515877948619845,
+            "height": 132.1617614190812
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.5611396554968318,
+          "box": {
+            "x": 72.38232682420566,
+            "y": 129.64944038091414,
+            "width": 55.45463734524343,
+            "height": 106.12346627337672
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.48453687167786036,
+          "box": {
+            "x": 301.8021665811684,
+            "y": 41.86277458018598,
+            "width": 63.81429037169613,
+            "height": 138.59384995769588
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.4775743241409774,
+          "box": {
+            "x": 215.4851750125662,
+            "y": 121.11428145303323,
+            "width": 65.68106190065956,
+            "height": 138.41046143490996
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.4761008486150179,
+          "box": {
+            "x": 0,
+            "y": 109.85395331113521,
+            "width": 78.5049943124204,
+            "height": 280.28523592004314
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.35154109286497165,
+          "box": {
+            "x": 97.22737084964544,
+            "y": 37.55246606409246,
+            "width": 103.4833620885664,
+            "height": 197.54337236092556
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.3217157084081421,
+          "box": {
+            "x": 0,
+            "y": 93.20535748280099,
+            "width": 48.82339716640575,
+            "height": 179.8862938148743
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.2905367477075876,
+          "box": {
+            "x": 347.0375972746985,
+            "y": 200.14367701989312,
+            "width": 27.9624027253015,
+            "height": 159.47604436707644
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.271755942977449,
+          "box": {
+            "x": 106.11902886215488,
+            "y": 105.29233658552414,
+            "width": 104.26808370435155,
+            "height": 190.9440776470435
+          }
+        }
+      ],
+      "sourceWidth": 375,
+      "sourceHeight": 398,
+      "latency": 11.059100000002218,
+      "backend": "cpu",
+      "backboneBackend": "wasm",
+      "architecture": "yolo26n-frozen-head-v1"
+    },
+    {
+      "id": "FudanPed00053",
+      "truth": [
+        {
+          "id": "FudanPed00053-1",
+          "classId": 0,
+          "x": 93,
+          "y": 168,
+          "width": 102,
+          "height": 264
+        },
+        {
+          "id": "FudanPed00053-2",
+          "classId": 0,
+          "x": 388,
+          "y": 149,
+          "width": 111,
+          "height": 304
+        }
+      ],
+      "items": [
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9995067186124972,
+          "box": {
+            "x": 424.51529562680844,
+            "y": 154.74385400964826,
+            "width": 79.84647422272542,
+            "height": 260.9434409239867
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.998391619352807,
+          "box": {
+            "x": 56.9014044756903,
+            "y": 107.82335709184888,
+            "width": 159.6765686532876,
+            "height": 371.8448580710949
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9977779963465673,
+          "box": {
+            "x": 307.053355186585,
+            "y": 123.05193918871268,
+            "width": 106.99540244377664,
+            "height": 265.4598092471181
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9976729550039616,
+          "box": {
+            "x": 146.80477702779103,
+            "y": 192.3079450612027,
+            "width": 66.21053005855808,
+            "height": 167.72393172434647
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.997372580458245,
+          "box": {
+            "x": 94.13071395105237,
+            "y": 216.67444711790796,
+            "width": 75.28452734540934,
+            "height": 234.2145021517918
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9964870681436679,
+          "box": {
+            "x": 449.9710088421361,
+            "y": 63.376656227875436,
+            "width": 91.02899115786391,
+            "height": 387.8818335965936
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9947718156650779,
+          "box": {
+            "x": 309.91710319399033,
+            "y": 0,
+            "width": 109.936010465533,
+            "height": 235.36266523374834
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9940919844918712,
+          "box": {
+            "x": 153.29224793205196,
+            "y": 212.14752220752686,
+            "width": 80.67638129974495,
+            "height": 239.48458731187222
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9856167381373377,
+          "box": {
+            "x": 376.8093107679994,
+            "y": 121.77973699002433,
+            "width": 139.98908335754248,
+            "height": 364.9199604917088
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9745492374819597,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 79.42733140685675,
+            "height": 285.53021067603976
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9595322390962754,
+          "box": {
+            "x": 147.45513599506637,
+            "y": 152.41847257583518,
+            "width": 123.90304021370565,
+            "height": 361.4840406866863
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9437750163144903,
+          "box": {
+            "x": 76.43418495136036,
+            "y": 297.7605334054036,
+            "width": 76.75678486695274,
+            "height": 169.46790660445714
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9403820959450623,
+          "box": {
+            "x": 338.3783651194315,
+            "y": 244.73295315704706,
+            "width": 103.4741176941622,
+            "height": 275.2962724521468
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9181792638533601,
+          "box": {
+            "x": 516.8352024070132,
+            "y": 258.1577259130943,
+            "width": 24.164797592986815,
+            "height": 263.72965702856743
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9169768874518996,
+          "box": {
+            "x": 345.96690587504753,
+            "y": 165.27994876116057,
+            "width": 102.33821269538055,
+            "height": 187.96938771424848
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9140174767663035,
+          "box": {
+            "x": 370.8567734535233,
+            "y": 12.001062636682951,
+            "width": 160.06869394645634,
+            "height": 339.4184876269913
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8949515856368476,
+          "box": {
+            "x": 377.657633998398,
+            "y": 312.07368494934275,
+            "width": 123.28455751480885,
+            "height": 221.91384510193865
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8909668327012377,
+          "box": {
+            "x": 239.10915381273205,
+            "y": 138.8863650890524,
+            "width": 74.81921832773227,
+            "height": 116.60074503805276
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8652813450773882,
+          "box": {
+            "x": 392.9889505359469,
+            "y": 3.068299540372139,
+            "width": 98.52953383600152,
+            "height": 247.4007224246229
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8432149758155478,
+          "box": {
+            "x": 499.36446857175764,
+            "y": 25.596956136413333,
+            "width": 41.63553142824236,
+            "height": 288.67804310466704
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.7894221729876877,
+          "box": {
+            "x": 134.32164157535715,
+            "y": 131.82424916701035,
+            "width": 99.8163432669719,
+            "height": 198.28098767463518
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.7684438998702047,
+          "box": {
+            "x": 283.89908013936366,
+            "y": 0,
+            "width": 178.42343857809698,
+            "height": 384.3389161456162
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.7655724736931802,
+          "box": {
+            "x": 198.2094771543558,
+            "y": 0,
+            "width": 160.9232300504105,
+            "height": 260.4913915363645
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.7513147435553669,
+          "box": {
+            "x": 423.096986732713,
+            "y": 116.70065143656771,
+            "width": 74.52560404514611,
+            "height": 163.5857245315282
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.702410164302074,
+          "box": {
+            "x": 2.562542525165544,
+            "y": 8.808659427875535,
+            "width": 129.48728072181493,
+            "height": 385.91909712793813
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.6962621469668621,
+          "box": {
+            "x": 362.9368851888621,
+            "y": 0,
+            "width": 78.8466212029166,
+            "height": 91.80071496089977
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.6070813059665386,
+          "box": {
+            "x": 484.04061755913034,
+            "y": 111.68633912248494,
+            "width": 56.95938244086966,
+            "height": 268.25394451801225
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.6026649754535847,
+          "box": {
+            "x": 274.2270808399985,
+            "y": 133.3845807161057,
+            "width": 194.0826414264456,
+            "height": 409.59365204039693
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.5612890169000619,
+          "box": {
+            "x": 0,
+            "y": 229.88537630264486,
+            "width": 59.08826170029913,
+            "height": 350.1146236973551
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.5465685759754603,
+          "box": {
+            "x": 0,
+            "y": 138.69410027870165,
+            "width": 152.9947808024306,
+            "height": 441.3058997212984
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.48818557866140216,
+          "box": {
+            "x": 190.7418517959127,
+            "y": 100.02448897891303,
+            "width": 148.61994743822683,
+            "height": 320.91825199941593
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.4626431531560141,
+          "box": {
+            "x": 490.9095648068956,
+            "y": 214.92146479232323,
+            "width": 50.09043519310438,
+            "height": 283.9440085360102
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.4555924711899911,
+          "box": {
+            "x": 78.32694519456155,
+            "y": 139.70248777158824,
+            "width": 118.73131758988032,
+            "height": 173.00671878245086
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.43229221381966243,
+          "box": {
+            "x": 509.9576297336416,
+            "y": 0,
+            "width": 31.042370266358375,
+            "height": 181.0916492547896
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.42059279322839926,
+          "box": {
+            "x": 153.77091892896732,
+            "y": 0,
+            "width": 126.26963879376206,
+            "height": 297.6429262514444
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.37937378099859587,
+          "box": {
+            "x": 4.868368210901946,
+            "y": 0,
+            "width": 121.94923248170664,
+            "height": 188.4534270073335
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.33038141680967376,
+          "box": {
+            "x": 420.4242716645233,
+            "y": 353.2090900948605,
+            "width": 118.64709276141662,
+            "height": 203.64359640141532
+          }
+        }
+      ],
+      "sourceWidth": 541,
+      "sourceHeight": 580,
+      "latency": 19.210300000002462,
+      "backend": "cpu",
+      "backboneBackend": "wasm",
+      "architecture": "yolo26n-frozen-head-v1"
+    },
+    {
+      "id": "FudanPed00058",
+      "truth": [
+        {
+          "id": "FudanPed00058-1",
+          "classId": 0,
+          "x": 144,
+          "y": 91,
+          "width": 117,
+          "height": 372
+        },
+        {
+          "id": "FudanPed00058-2",
+          "classId": 0,
+          "x": 42,
+          "y": 122,
+          "width": 22,
+          "height": 89
+        },
+        {
+          "id": "FudanPed00058-3",
+          "classId": 0,
+          "x": 288,
+          "y": 101,
+          "width": 53,
+          "height": 179
+        },
+        {
+          "id": "FudanPed00058-4",
+          "classId": 0,
+          "x": 352,
+          "y": 96,
+          "width": 54,
+          "height": 180
+        },
+        {
+          "id": "FudanPed00058-5",
+          "classId": 0,
+          "x": 426,
+          "y": 125,
+          "width": 20,
+          "height": 57
+        },
+        {
+          "id": "FudanPed00058-6",
+          "classId": 0,
+          "x": 461,
+          "y": 125,
+          "width": 13,
+          "height": 46
+        },
+        {
+          "id": "FudanPed00058-7",
+          "classId": 0,
+          "x": 472,
+          "y": 132,
+          "width": 17,
+          "height": 51
+        },
+        {
+          "id": "FudanPed00058-8",
+          "classId": 0,
+          "x": 491,
+          "y": 120,
+          "width": 26,
+          "height": 82
+        }
+      ],
+      "items": [
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9992753255013174,
+          "box": {
+            "x": 328.39981671924124,
+            "y": 36.84823476476132,
+            "width": 102.80923326277838,
+            "height": 241.4654336860605
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9992636455106931,
+          "box": {
+            "x": 234.74526139206617,
+            "y": 0,
+            "width": 74.1623137626971,
+            "height": 347.0433286453397
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9983099339258543,
+          "box": {
+            "x": 260.9897673865142,
+            "y": 53.644306484520335,
+            "width": 103.49261602123534,
+            "height": 201.71891086652082
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9980275985541825,
+          "box": {
+            "x": 176.2473258555914,
+            "y": 73.84801993510378,
+            "width": 107.19581012296405,
+            "height": 405.15198006489624
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9894666804317067,
+          "box": {
+            "x": 0,
+            "y": 77.29957406758786,
+            "width": 51.46962640554901,
+            "height": 245.1506135666716
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9641035975852033,
+          "box": {
+            "x": 286.16796692432945,
+            "y": 110.80000097402109,
+            "width": 72.10848552344612,
+            "height": 198.7572884061869
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.951358083390042,
+          "box": {
+            "x": 165.6647571367946,
+            "y": 239.83921598656337,
+            "width": 93.53216295935238,
+            "height": 239.16078401343663
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9455990385211865,
+          "box": {
+            "x": 438.0232618709655,
+            "y": 91.82053589118831,
+            "width": 64.30259904088007,
+            "height": 128.3978850811802
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9267832667143873,
+          "box": {
+            "x": 219.60499711170286,
+            "y": 132.6583712873971,
+            "width": 71.67047972349394,
+            "height": 185.94699654785657
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9264806464170822,
+          "box": {
+            "x": 121.34212654689013,
+            "y": 252.15656130561499,
+            "width": 95.68411046011609,
+            "height": 202.54095968041005
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9242218080100028,
+          "box": {
+            "x": 301.6687172585771,
+            "y": 154.28015351339914,
+            "width": 93.22013778587205,
+            "height": 205.26890044798765
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9130958479480448,
+          "box": {
+            "x": 115.49240621056695,
+            "y": 0,
+            "width": 119.13948324239361,
+            "height": 284.156522902418
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8523189393138477,
+          "box": {
+            "x": 161.0662455074593,
+            "y": 0,
+            "width": 121.04092432598765,
+            "height": 223.51327632003034
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8462783943481061,
+          "box": {
+            "x": 183.36249442186784,
+            "y": 57.46240160216115,
+            "width": 66.5508965821515,
+            "height": 195.7516810970056
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8364144643722057,
+          "box": {
+            "x": 20.674070855775504,
+            "y": 144.68299641546932,
+            "width": 131.6867239177404,
+            "height": 291.94780139883915
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8023310344721466,
+          "box": {
+            "x": 370.1286939358094,
+            "y": 76.80564844788424,
+            "width": 91.6508149910311,
+            "height": 208.23438493452832
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.7936228984548013,
+          "box": {
+            "x": 139.54361298880045,
+            "y": 29.36791322231372,
+            "width": 72.25449884215294,
+            "height": 133.73344234756433
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.7375913344433062,
+          "box": {
+            "x": 91.08491677214859,
+            "y": 32.449919018067405,
+            "width": 166.42171454492177,
+            "height": 385.44716836297596
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.6913891105348564,
+          "box": {
+            "x": 120.57077047483946,
+            "y": 231.37046116652266,
+            "width": 107.51790485056071,
+            "height": 128.0321461954569
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.6781530668431341,
+          "box": {
+            "x": 35.04398094168177,
+            "y": 8.010372581376219,
+            "width": 84.5881629945378,
+            "height": 178.03794507670074
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.645883600943998,
+          "box": {
+            "x": 0,
+            "y": 45.333140150875614,
+            "width": 108.36621790575313,
+            "height": 208.77889506707666
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.5859323859929129,
+          "box": {
+            "x": 384.8359166085468,
+            "y": 0,
+            "width": 133.08325010443906,
+            "height": 240.84601592356842
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.5357118875471371,
+          "box": {
+            "x": 231.0483359796096,
+            "y": 174.28828222502602,
+            "width": 90.84071927482228,
+            "height": 168.61456824272483
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.532495169882898,
+          "box": {
+            "x": 349.85852238451196,
+            "y": 106.26642522325682,
+            "width": 132.0579326326569,
+            "height": 283.5115443246589
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.5286376230910174,
+          "box": {
+            "x": 305.50159846355365,
+            "y": 62.01451088444512,
+            "width": 71.25408189065035,
+            "height": 144.1941823907003
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.4676396228986034,
+          "box": {
+            "x": 187.05854680549305,
+            "y": 313.7283295794508,
+            "width": 102.03509807243069,
+            "height": 165.27167042054919
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.45239830212496057,
+          "box": {
+            "x": 407.29118227788365,
+            "y": 102.03495801894832,
+            "width": 74.39182177367059,
+            "height": 110.51341972500819
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.3895540718729008,
+          "box": {
+            "x": 246.3141357264929,
+            "y": 334.12161567210825,
+            "width": 124.68796177617617,
+            "height": 144.87838432789175
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.3744046248727642,
+          "box": {
+            "x": 44.175651241031325,
+            "y": 142.4551907078543,
+            "width": 99.9215617577357,
+            "height": 154.843567068034
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.3607880485876161,
+          "box": {
+            "x": 439.0027785591334,
+            "y": 128.59224880705852,
+            "width": 82.99722144086661,
+            "height": 133.6205063422778
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.3543969001479756,
+          "box": {
+            "x": 375.32274339023803,
+            "y": 73.68342656131138,
+            "width": 65.47331824688297,
+            "height": 107.4974170861312
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.349776868378245,
+          "box": {
+            "x": 72.28706899327534,
+            "y": 42.9978533477626,
+            "width": 103.111727710509,
+            "height": 239.81393661221313
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.3460605108210206,
+          "box": {
+            "x": 0,
+            "y": 189.95087342940948,
+            "width": 85.80820349229825,
+            "height": 289.0491265705905
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.32211389209661595,
+          "box": {
+            "x": 463.459498216767,
+            "y": 101.31068970032602,
+            "width": 58.540501783233026,
+            "height": 122.70351362627353
+          }
+        }
+      ],
+      "sourceWidth": 522,
+      "sourceHeight": 479,
+      "latency": 15.5099999999984,
+      "backend": "cpu",
+      "backboneBackend": "wasm",
+      "architecture": "yolo26n-frozen-head-v1"
+    },
+    {
+      "id": "PennPed00077",
+      "truth": [
+        {
+          "id": "PennPed00077-1",
+          "classId": 0,
+          "x": 64,
+          "y": 26,
+          "width": 117,
+          "height": 291
+        }
+      ],
+      "items": [
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9977107301332662,
+          "box": {
+            "x": 101.31573176258894,
+            "y": 73.4353091961779,
+            "width": 89.34132729727409,
+            "height": 237.3446169237327
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9923889135123989,
+          "box": {
+            "x": 70.91775900490164,
+            "y": 0,
+            "width": 87.72475554334504,
+            "height": 196.4299408555191
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.99103151427171,
+          "box": {
+            "x": 219.00079802193218,
+            "y": 183.56283385627822,
+            "width": 51.63378546304202,
+            "height": 119.52984941297959
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9887131819798493,
+          "box": {
+            "x": 232.41448630820022,
+            "y": 0,
+            "width": 64.90709415421182,
+            "height": 143.9610531264425
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9744671714318753,
+          "box": {
+            "x": 5.483836973782635,
+            "y": 0,
+            "width": 93.36492026345701,
+            "height": 228.42089566796705
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.973211070608312,
+          "box": {
+            "x": 282.5163993428528,
+            "y": 109.93048574701452,
+            "width": 56.549863333500866,
+            "height": 118.56492838365433
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9642965530647643,
+          "box": {
+            "x": 270.46701455332123,
+            "y": 72.70979856663828,
+            "width": 81.53298544667877,
+            "height": 227.76641929147914
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9554722836578671,
+          "box": {
+            "x": 138.02713567773858,
+            "y": 23.428826110534622,
+            "width": 94.07568178283134,
+            "height": 227.046422629462
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9427342211057559,
+          "box": {
+            "x": 173.3456951348937,
+            "y": 0,
+            "width": 83.02517400717218,
+            "height": 190.25385920633119
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9382103721869974,
+          "box": {
+            "x": 78.12583705466723,
+            "y": 91.24956641343167,
+            "width": 70.18813491290639,
+            "height": 209.08679884344158
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9369546760068901,
+          "box": {
+            "x": 42.69656318518092,
+            "y": 52.30356324410252,
+            "width": 72.66567627190766,
+            "height": 199.2898408105899
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9265720885149539,
+          "box": {
+            "x": 34.52337474324427,
+            "y": 7.594532331401878,
+            "width": 117.24721567649459,
+            "height": 278.9198556677201
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9073971592658515,
+          "box": {
+            "x": 13.998860207692937,
+            "y": 181.06993141640626,
+            "width": 119.60359635248305,
+            "height": 141.93006858359374
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8913807723688009,
+          "box": {
+            "x": 238.370019666774,
+            "y": 152.30266785843506,
+            "width": 64.88634692302753,
+            "height": 170.69733214156494
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8640229239252444,
+          "box": {
+            "x": 251.80112677667233,
+            "y": 0,
+            "width": 78.33200563102355,
+            "height": 196.9846098655951
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8612176530435308,
+          "box": {
+            "x": 168.82911690748188,
+            "y": 142.77322790374433,
+            "width": 83.8242479227107,
+            "height": 180.22677209625567
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8580212111904953,
+          "box": {
+            "x": 126.85122746083152,
+            "y": 168.76967973618838,
+            "width": 46.95594700216006,
+            "height": 93.35105272222376
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8545202183558325,
+          "box": {
+            "x": 311.23388384545405,
+            "y": 67.79322801743231,
+            "width": 40.766116154545955,
+            "height": 157.11390031403246
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8130525706190455,
+          "box": {
+            "x": 132.51004820936103,
+            "y": 0,
+            "width": 63.536556951705876,
+            "height": 180.90983321544064
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8117792093480458,
+          "box": {
+            "x": 64.84603981971333,
+            "y": 0,
+            "width": 61.962414205822995,
+            "height": 119.52862381058817
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.7764685417358229,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 64.40369903251077,
+            "height": 130.4303274546196
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.7418042679292002,
+          "box": {
+            "x": 274.6525789480105,
+            "y": 141.0213275572918,
+            "width": 53.03383067649867,
+            "height": 118.57383654373487
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.6591308404233325,
+          "box": {
+            "x": 41.90128602012042,
+            "y": 139.54170591918287,
+            "width": 57.172853256298524,
+            "height": 112.4196871277897
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.6394261967251533,
+          "box": {
+            "x": 45.706018389715716,
+            "y": 213.16355975558372,
+            "width": 54.2064021870302,
+            "height": 109.83644024441628
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.5527405891966536,
+          "box": {
+            "x": 203.35626474990053,
+            "y": 16.983564406747465,
+            "width": 85.18351332594474,
+            "height": 183.60287631222948
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.5496702438972199,
+          "box": {
+            "x": 0,
+            "y": 74.00670439788576,
+            "width": 43.5522207660988,
+            "height": 150.13132056442058
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.5267596610878682,
+          "box": {
+            "x": 172.49037576002934,
+            "y": 0,
+            "width": 70.82481678439322,
+            "height": 91.64307006102537
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.5111531588847698,
+          "box": {
+            "x": 0,
+            "y": 174.0895349325245,
+            "width": 43.21311198108276,
+            "height": 128.63388376574954
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.47706789427963675,
+          "box": {
+            "x": 285.1906714155825,
+            "y": 41.583582349041144,
+            "width": 63.61551720767841,
+            "height": 138.52167431951665
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.476481757976054,
+          "box": {
+            "x": 207.62568191833572,
+            "y": 0,
+            "width": 62.36904042486805,
+            "height": 120.96821949892151
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.4659616147311292,
+          "box": {
+            "x": 141.6720136346205,
+            "y": 169.84141061039475,
+            "width": 74.79902385374817,
+            "height": 142.53469967410183
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.4348008002151122,
+          "box": {
+            "x": 0,
+            "y": 22.753766839165714,
+            "width": 31.272368041886704,
+            "height": 88.60624814374222
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.4307992067236758,
+          "box": {
+            "x": 0,
+            "y": 232.74398169825506,
+            "width": 53.48063408904935,
+            "height": 90.25601830174494
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.39124976931711936,
+          "box": {
+            "x": 196.37543239936684,
+            "y": 70.05026778317317,
+            "width": 68.84584301049176,
+            "height": 114.88021318876842
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.36972595035030625,
+          "box": {
+            "x": 157.69760670947102,
+            "y": 0,
+            "width": 52.629890829330805,
+            "height": 73.82413107456331
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.35237516333046714,
+          "box": {
+            "x": 24.767405182719877,
+            "y": 166.631367213846,
+            "width": 60.28769054107335,
+            "height": 144.9290414152242
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.34417662691735235,
+          "box": {
+            "x": 257.67388494910733,
+            "y": 228.33481602139187,
+            "width": 76.97045917559217,
+            "height": 94.66518397860813
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.3031170241649479,
+          "box": {
+            "x": 310.62404086781,
+            "y": 153.8290902097307,
+            "width": 41.37595913219002,
+            "height": 83.3274953737058
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.2712640446250796,
+          "box": {
+            "x": 72.53564729793925,
+            "y": 173.5516718549619,
+            "width": 57.17640405479759,
+            "height": 135.0094217481784
+          }
+        }
+      ],
+      "sourceWidth": 352,
+      "sourceHeight": 323,
+      "latency": 7.8145000000004075,
+      "backend": "cpu",
+      "backboneBackend": "wasm",
+      "architecture": "yolo26n-frozen-head-v1"
+    },
+    {
+      "id": "PennPed00065",
+      "truth": [
+        {
+          "id": "PennPed00065-1",
+          "classId": 0,
+          "x": 23,
+          "y": 20,
+          "width": 116,
+          "height": 284
+        }
+      ],
+      "items": [
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9993199056708412,
+          "box": {
+            "x": 64.94956307433321,
+            "y": 194.40857768190335,
+            "width": 27.736446375821885,
+            "height": 113.59615825371333
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.995840626821956,
+          "box": {
+            "x": 274.6360563677127,
+            "y": 0,
+            "width": 46.9984589166574,
+            "height": 84.06347241493961
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9929038068577873,
+          "box": {
+            "x": 90.08360118482456,
+            "y": 30.777319263320706,
+            "width": 68.3426917697273,
+            "height": 195.6396546756693
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9902052432913461,
+          "box": {
+            "x": 71.94076835015976,
+            "y": 1.2361071229555476,
+            "width": 47.79476356169339,
+            "height": 156.34442273153147
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9891774376929321,
+          "box": {
+            "x": 19.11113866275085,
+            "y": 3.8972327597554903,
+            "width": 74.89512408518456,
+            "height": 221.4609326641953
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9875080358864676,
+          "box": {
+            "x": 257.22635129963646,
+            "y": 0,
+            "width": 66.77364870036354,
+            "height": 134.6600601374127
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9812589986466154,
+          "box": {
+            "x": 292.09185134635305,
+            "y": 68.15778657632559,
+            "width": 31.908148653646947,
+            "height": 82.13519628685815
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9723372917696177,
+          "box": {
+            "x": 54.552861360287736,
+            "y": 147.39498828447054,
+            "width": 74.99492360543387,
+            "height": 170.60501171552946
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9701210756898309,
+          "box": {
+            "x": 72.91140383601528,
+            "y": 217.00917327326079,
+            "width": 69.12457172821705,
+            "height": 100.99082672673921
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.961988209427093,
+          "box": {
+            "x": 43.21272645469592,
+            "y": 74.57406430815081,
+            "width": 67.3923782790576,
+            "height": 172.02811305563313
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9475048953284011,
+          "box": {
+            "x": 41.56700909431033,
+            "y": 0,
+            "width": 140.55434283226123,
+            "height": 205.3703925972398
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9397549681205652,
+          "box": {
+            "x": 9.914360074602035,
+            "y": 126.808146255709,
+            "width": 54.31909041242172,
+            "height": 113.51117879017664
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9251388610433878,
+          "box": {
+            "x": 203.10837763769752,
+            "y": 78.47169858989159,
+            "width": 51.505739185946425,
+            "height": 101.87266338443217
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8836829921691726,
+          "box": {
+            "x": 297.15870753298276,
+            "y": 105.9563264485965,
+            "width": 26.84129246701724,
+            "height": 83.33410540277616
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8623178613053744,
+          "box": {
+            "x": 227.62166411521025,
+            "y": 115.5800120418691,
+            "width": 67.20092657643784,
+            "height": 184.86501153428617
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8547614331036926,
+          "box": {
+            "x": 33.65195553676218,
+            "y": 0,
+            "width": 44.291708633857134,
+            "height": 77.43924891175212
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8382052140801056,
+          "box": {
+            "x": 61.46193960344534,
+            "y": 244.5868826833112,
+            "width": 54.57343189423728,
+            "height": 73.41311731668881
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8256981785201959,
+          "box": {
+            "x": 0,
+            "y": 30.837625515081257,
+            "width": 41.02298576759006,
+            "height": 146.66214762175593
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8225395745722555,
+          "box": {
+            "x": 51.64193029645561,
+            "y": 154.235959754865,
+            "width": 43.49938430387884,
+            "height": 112.8336736846195
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.7994280230969296,
+          "box": {
+            "x": 266.64716787934316,
+            "y": 147.45749102623776,
+            "width": 56.91379950371811,
+            "height": 120.42299100026773
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.7548876365136453,
+          "box": {
+            "x": 40.67065897164345,
+            "y": 200.3564777052733,
+            "width": 65.024438456329,
+            "height": 117.6435222947267
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.7213596082281319,
+          "box": {
+            "x": 0,
+            "y": 88.32813986769264,
+            "width": 31.998450133007534,
+            "height": 160.9811439950041
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.6860340914183702,
+          "box": {
+            "x": 65.52887331570614,
+            "y": 76.59155219124406,
+            "width": 58.64560332149222,
+            "height": 108.77301239042993
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.5668641452344422,
+          "box": {
+            "x": 101.5195794417023,
+            "y": 71.42173156101954,
+            "width": 59.86785005886615,
+            "height": 82.07335778887911
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.5521620665124289,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 51.136199806303715,
+            "height": 120.05469721190981
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.4314155127272314,
+          "box": {
+            "x": 217.63473742283915,
+            "y": 0,
+            "width": 68.60337413420874,
+            "height": 82.5655355455799
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.41845013386400254,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 37.80519233079678,
+            "height": 57.26216307543828
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.41584447883135073,
+          "box": {
+            "x": 129.40692482817477,
+            "y": 57.525494149431545,
+            "width": 55.522868000387206,
+            "height": 137.7156672660355
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.3655284471639994,
+          "box": {
+            "x": 196.8586081606881,
+            "y": 58.76007166048169,
+            "width": 71.64387065620485,
+            "height": 173.2436706229811
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.3502576646376882,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 132.02956866908266,
+            "height": 131.74551281032544
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.3078426511236523,
+          "box": {
+            "x": 122.69161207124111,
+            "y": 219.98543574925748,
+            "width": 64.63839469558951,
+            "height": 98.01456425074252
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.2962572351530344,
+          "box": {
+            "x": 249.58177733100464,
+            "y": 54.37256331871744,
+            "width": 74.41822266899536,
+            "height": 146.14274077824587
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.2943139983167835,
+          "box": {
+            "x": 0,
+            "y": 110.7300139125664,
+            "width": 50.16967398532769,
+            "height": 197.53250913930003
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.2665335644279611,
+          "box": {
+            "x": 192.09664013168813,
+            "y": 128.6593047180693,
+            "width": 72.60307811402615,
+            "height": 169.58124520432065
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.26106527259038176,
+          "box": {
+            "x": 85.14741758978462,
+            "y": 140.60273634884288,
+            "width": 62.528495630843565,
+            "height": 133.6884016969343
+          }
+        }
+      ],
+      "sourceWidth": 324,
+      "sourceHeight": 318,
+      "latency": 7.583499999997002,
+      "backend": "cpu",
+      "backboneBackend": "wasm",
+      "architecture": "yolo26n-frozen-head-v1"
+    },
+    {
+      "id": "PennPed00095",
+      "truth": [
+        {
+          "id": "PennPed00095-1",
+          "classId": 0,
+          "x": 192,
+          "y": 49,
+          "width": 108,
+          "height": 288
+        },
+        {
+          "id": "PennPed00095-2",
+          "classId": 0,
+          "x": 319,
+          "y": 54,
+          "width": 113,
+          "height": 281
+        }
+      ],
+      "items": [
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9990829770867637,
+          "box": {
+            "x": 333.7728932177739,
+            "y": 97.59811428946482,
+            "width": 83.35734063378925,
+            "height": 277.40188571053517
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9977180047226714,
+          "box": {
+            "x": 209.94090901122235,
+            "y": 0,
+            "width": 95.24257201565217,
+            "height": 319.4590678082611
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9875985905859221,
+          "box": {
+            "x": 142.96643175222536,
+            "y": 0,
+            "width": 55.56853809372518,
+            "height": 151.64491692365465
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9859077683437576,
+          "box": {
+            "x": 306.66802618729247,
+            "y": 0,
+            "width": 115.94127613682599,
+            "height": 276.7660772585034
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9858742064913444,
+          "box": {
+            "x": 276.9287557532617,
+            "y": 154.48349483694275,
+            "width": 69.92753009980242,
+            "height": 176.94587884186572
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9738394014238002,
+          "box": {
+            "x": 164.36185284888026,
+            "y": 51.60383419774522,
+            "width": 75.8746229147012,
+            "height": 201.63717457920743
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9644918084375597,
+          "box": {
+            "x": 222.52156406822536,
+            "y": 162.1949310647614,
+            "width": 83.88939811606156,
+            "height": 207.00582515776122
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9623667457745237,
+          "box": {
+            "x": 265.63215094573417,
+            "y": 50.487185146559256,
+            "width": 93.06979798347209,
+            "height": 250.97969940444463
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9318458622777214,
+          "box": {
+            "x": 364.2303295839379,
+            "y": 120.61814664773601,
+            "width": 61.38677918191013,
+            "height": 169.80840506318606
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8997506040248411,
+          "box": {
+            "x": 135.39267779748198,
+            "y": 35.60481858415483,
+            "width": 147.5184711710534,
+            "height": 294.18563563785165
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8705994171675986,
+          "box": {
+            "x": 53.48215562860751,
+            "y": 2.4333005347851975,
+            "width": 104.11734089468203,
+            "height": 227.5313459953594
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8702755255184201,
+          "box": {
+            "x": 171.59590201752934,
+            "y": 101.29629008896855,
+            "width": 185.50575075808297,
+            "height": 273.70370991103147
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8616563109712561,
+          "box": {
+            "x": 0,
+            "y": 112.35244850590699,
+            "width": 42.977091045220554,
+            "height": 126.11964942253066
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8607893716177932,
+          "box": {
+            "x": 403.178877331854,
+            "y": 0.16817565231942516,
+            "width": 108.82112266814602,
+            "height": 295.33902109786544
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.847992468916588,
+          "box": {
+            "x": 314.35399603522853,
+            "y": 83.91967726086057,
+            "width": 190.9340577458487,
+            "height": 291.08032273913943
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.7807452750629921,
+          "box": {
+            "x": 298.2964044922298,
+            "y": 92.01685719730382,
+            "width": 84.9292157713113,
+            "height": 155.18314289538029
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.77338915025794,
+          "box": {
+            "x": 73.7386667193694,
+            "y": 6.910079415206695,
+            "width": 150.16817094655693,
+            "height": 320.9942495359104
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.767830735643842,
+          "box": {
+            "x": 364.1768457068221,
+            "y": 0,
+            "width": 84.14162027966518,
+            "height": 182.51647873549794
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.7454182853762021,
+          "box": {
+            "x": 284.40598434291576,
+            "y": 41.14567860444385,
+            "width": 61.082539802413294,
+            "height": 133.5395356275141
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.7306207198617386,
+          "box": {
+            "x": 259.06171236580565,
+            "y": 204.65423096047238,
+            "width": 106.20893747814193,
+            "height": 170.34576903952762
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.6309461083607446,
+          "box": {
+            "x": 329.9522963153417,
+            "y": 39.41077005892128,
+            "width": 68.54459810855417,
+            "height": 129.73315260180883
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.6299123472007379,
+          "box": {
+            "x": 386.1952116299151,
+            "y": 181.70210307644396,
+            "width": 105.59612555494277,
+            "height": 193.29789692355604
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.6287250257093432,
+          "box": {
+            "x": 201.72940906452635,
+            "y": 7.092974015385863,
+            "width": 77.55244563770617,
+            "height": 137.56979026642645
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.5714094160598326,
+          "box": {
+            "x": 407.5123794697619,
+            "y": 0,
+            "width": 99.16487707901649,
+            "height": 106.85397937990908
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.4869147622425327,
+          "box": {
+            "x": 0,
+            "y": 2.1178662971548956,
+            "width": 56.941468833509944,
+            "height": 148.49224072723314
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.4729958936409352,
+          "box": {
+            "x": 112.00780785026058,
+            "y": 74.41073041934555,
+            "width": 106.67590432477414,
+            "height": 194.14487916139126
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.4355964593894845,
+          "box": {
+            "x": 291.1631121922626,
+            "y": 0,
+            "width": 91.26267750372483,
+            "height": 175.54105987021907
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.42351437177357293,
+          "box": {
+            "x": 37.99516115374761,
+            "y": 28.850095747225957,
+            "width": 86.42860228426801,
+            "height": 166.10681650164284
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.4159831946204964,
+          "box": {
+            "x": 9.511775505294757,
+            "y": 55.392663569840295,
+            "width": 86.2917096753616,
+            "height": 160.71660983147237
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.3759339259345534,
+          "box": {
+            "x": 382.8099800425751,
+            "y": 70.62371762449351,
+            "width": 108.39369674782586,
+            "height": 181.59520160654384
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.3196580053518576,
+          "box": {
+            "x": 8.817740862315269,
+            "y": 213.90870993602059,
+            "width": 85.8985151939558,
+            "height": 158.4292767950469
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.30935140684533907,
+          "box": {
+            "x": 69.5271257648139,
+            "y": 0,
+            "width": 81.11641316603139,
+            "height": 117.90555791023947
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.2951610180692059,
+          "box": {
+            "x": 446.07483856056456,
+            "y": 47.41402145961967,
+            "width": 65.92516143943544,
+            "height": 200.76792414710482
+          }
+        }
+      ],
+      "sourceWidth": 512,
+      "sourceHeight": 375,
+      "latency": 11.59150000000227,
+      "backend": "cpu",
+      "backboneBackend": "wasm",
+      "architecture": "yolo26n-frozen-head-v1"
+    },
+    {
+      "id": "PennPed00074",
+      "truth": [
+        {
+          "id": "PennPed00074-1",
+          "classId": 0,
+          "x": 259,
+          "y": 30,
+          "width": 163,
+          "height": 287
+        },
+        {
+          "id": "PennPed00074-2",
+          "classId": 0,
+          "x": 197,
+          "y": 22,
+          "width": 86,
+          "height": 281
+        },
+        {
+          "id": "PennPed00074-3",
+          "classId": 0,
+          "x": 116,
+          "y": 47,
+          "width": 107,
+          "height": 248
+        }
+      ],
+      "items": [
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9997776059150256,
+          "box": {
+            "x": 304.12517903491886,
+            "y": 0,
+            "width": 78.90015739482368,
+            "height": 270.9122820291747
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9979930025094578,
+          "box": {
+            "x": 166.00720637526706,
+            "y": 0,
+            "width": 92.94943766445954,
+            "height": 252.70571844483288
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9930811659422266,
+          "box": {
+            "x": 271.1492679512256,
+            "y": 143.05701198062908,
+            "width": 80.04538266810897,
+            "height": 188.94298801937092
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9926086027929198,
+          "box": {
+            "x": 187.38161146825942,
+            "y": 47.50591960250907,
+            "width": 89.50513505680343,
+            "height": 275.2668262254417
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9896982894006207,
+          "box": {
+            "x": 203.4149905916009,
+            "y": 180.3459903594642,
+            "width": 75.20157544205554,
+            "height": 151.6540096405358
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9867698345583976,
+          "box": {
+            "x": 321.6611611642739,
+            "y": 72.32749884972803,
+            "width": 50.73993100026047,
+            "height": 145.6570849092617
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9848902051042722,
+          "box": {
+            "x": 236.01970486369132,
+            "y": 52.03793428308772,
+            "width": 61.52739154541351,
+            "height": 147.02924711619926
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.980423940260371,
+          "box": {
+            "x": 295.609146958648,
+            "y": 109.86145565031727,
+            "width": 137.76998929017356,
+            "height": 222.13854434968272
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9773821133451095,
+          "box": {
+            "x": 165.0937933164884,
+            "y": 150.07906903131254,
+            "width": 48.21206292701325,
+            "height": 112.36572063420243
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9751554064518746,
+          "box": {
+            "x": 336.9268874393842,
+            "y": 215.18512258267972,
+            "width": 76.16675767441592,
+            "height": 116.81487741732028
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9697272766988353,
+          "box": {
+            "x": 330.74244921166115,
+            "y": 0,
+            "width": 66.61288933781032,
+            "height": 178.87556196626826
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.955740718090301,
+          "box": {
+            "x": 237.7328154581531,
+            "y": 105.47423016454393,
+            "width": 65.9128756481957,
+            "height": 143.2372250525372
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9467944410859729,
+          "box": {
+            "x": 125.39513830880978,
+            "y": 13.981997728783426,
+            "width": 175.17566163130792,
+            "height": 318.0180022712166
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.9240291910388289,
+          "box": {
+            "x": 227.05066781673324,
+            "y": 0,
+            "width": 214.94933218326676,
+            "height": 277.74442719360576
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.902726737704851,
+          "box": {
+            "x": 241.59068098987856,
+            "y": 102.14094979594053,
+            "width": 92.42714581258778,
+            "height": 210.08613742146974
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8864572249467468,
+          "box": {
+            "x": 349.0987659625142,
+            "y": 112.4869580969013,
+            "width": 60.966341294562994,
+            "height": 137.6086416461526
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.8606230112869309,
+          "box": {
+            "x": 92.0227598104456,
+            "y": 138.4357706168247,
+            "width": 104.66124177313866,
+            "height": 193.5642293831753
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.782952229724046,
+          "box": {
+            "x": 131.06088787643728,
+            "y": 49.45883874333464,
+            "width": 94.91605795167342,
+            "height": 213.3589551083141
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.7487526770822992,
+          "box": {
+            "x": 20.006626716669153,
+            "y": 244.07998709933278,
+            "width": 88.62317155513557,
+            "height": 87.92001290066722
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.7469767937425542,
+          "box": {
+            "x": 0,
+            "y": 205.65836241972292,
+            "width": 74.683081433775,
+            "height": 126.34163758027708
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.7372355781642917,
+          "box": {
+            "x": 369.2833934114496,
+            "y": 164.83351562232536,
+            "width": 72.7166065885504,
+            "height": 167.16648437767464
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.7307971181256128,
+          "box": {
+            "x": 150.89504349162405,
+            "y": 64.70061056977752,
+            "width": 62.72319194193176,
+            "height": 127.54247153382519
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.6841073114492563,
+          "box": {
+            "x": 111.21422371545097,
+            "y": 0,
+            "width": 75.53395066108871,
+            "height": 168.58133633695385
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.670663154488342,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 46.187311885299266,
+            "height": 119.55992821887547
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.6463027201196736,
+          "box": {
+            "x": 138.9036330484272,
+            "y": 117.1310791770898,
+            "width": 72.85592979134927,
+            "height": 124.03634403853435
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.6271950368396435,
+          "box": {
+            "x": 19.06774005796443,
+            "y": 101.97414829247745,
+            "width": 64.56132222168443,
+            "height": 151.4432023378349
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.6221674865227067,
+          "box": {
+            "x": 57.59472535981412,
+            "y": 0,
+            "width": 116.74014466500493,
+            "height": 281.31542216867007
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.5987951404841279,
+          "box": {
+            "x": 354.535137880308,
+            "y": 249.79866679849124,
+            "width": 86.9808154833911,
+            "height": 82.20133320150876
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.5733038959670779,
+          "box": {
+            "x": 245.44068287741553,
+            "y": 233.75252267741288,
+            "width": 71.2082700201012,
+            "height": 98.24747732258712
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.5014622169771623,
+          "box": {
+            "x": 207.54415295611105,
+            "y": 0,
+            "width": 113.76768135841601,
+            "height": 197.84955313606395
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.42331193064864414,
+          "box": {
+            "x": 264.48636862569276,
+            "y": 0,
+            "width": 106.49289307816525,
+            "height": 173.123210118363
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.40741847254329666,
+          "box": {
+            "x": 76.72345808136667,
+            "y": 33.35771962393125,
+            "width": 78.3067903522102,
+            "height": 142.73201308776726
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.3545065535146837,
+          "box": {
+            "x": 279.0099906001189,
+            "y": 105.41113526480629,
+            "width": 71.9351508893568,
+            "height": 113.01939427023908
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.3447314090119779,
+          "box": {
+            "x": 0,
+            "y": 65.26376598923359,
+            "width": 54.21684608231096,
+            "height": 212.4857018719543
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.327906278986281,
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 108.64678444447833,
+            "height": 120.09006704111539
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.3060867602621795,
+          "box": {
+            "x": 36.522475771717325,
+            "y": 0,
+            "width": 104.22479977537404,
+            "height": 87.92410865137833
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.2945144866973332,
+          "box": {
+            "x": 346.80527156091756,
+            "y": 0,
+            "width": 95.19472843908244,
+            "height": 86.02541728406524
+          }
+        },
+        {
+          "classId": 0,
+          "label": "person",
+          "score": 0.2790323240456055,
+          "box": {
+            "x": 102.10001217822985,
+            "y": 254.1802823307158,
+            "width": 97.84295257357122,
+            "height": 77.81971766928419
+          }
+        }
+      ],
+      "sourceWidth": 442,
+      "sourceHeight": 332,
+      "latency": 9.378099999998085,
+      "backend": "cpu",
+      "backboneBackend": "wasm",
+      "architecture": "yolo26n-frozen-head-v1"
+    }
+  ]
+}

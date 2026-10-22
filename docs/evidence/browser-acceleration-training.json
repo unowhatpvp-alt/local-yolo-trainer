@@ -1,0 +1,670 @@
+{
+  "schemaVersion": 2,
+  "startedAt": "2026-10-22T00:03:51.349Z",
+  "scope": "Actual browser Worker, original PNG Blob decoding, local training, checkpoint reload and ONNX execution",
+  "finalTestPolicy": "Engineering replay after correcting Canvas scaling to the existing inference site high-quality setting. Architecture, focal-KL loss, 100 epochs, confidence .25, NMS .45 and matching IoU .5 remain frozen. The original first evaluation is retained in pre-canvas-high-v1; the second evaluation is not an untouched independent experiment. No final-test-based model selection or tuning.",
+  "preprocessingVersion": "canvas-high-v1",
+  "phase": "completed-acceleration-training",
+  "passed": true,
+  "pageErrors": [],
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "\u001b[0;93m2026-10-21 20:03:55.979200 [W:onnxruntime:Default, cpuid_info.cc:91 LogEarlyWarning] Unknown CPU vendor. cpuinfo_vendor value: 0\u001b[m"
+  ],
+  "nonGetRequests": [],
+  "externalRequests": [],
+  "servedResourceBindings": [
+    {
+      "url": "src/training/worker.js",
+      "status": 200,
+      "bytes": 3835,
+      "sha256": "3cf2820d0303aa48d806ebe4f5e65c1d472d0e686ed091fad2f5df9902b04944"
+    },
+    {
+      "url": "src/training/engine.js",
+      "status": 200,
+      "bytes": 156355,
+      "sha256": "f7adbe724ec3af6d57c6ad326eb1db606e3fdd786ee3ff55875a9b4e6689f363"
+    },
+    {
+      "url": "src/training/worker-router.js",
+      "status": 200,
+      "bytes": 6268,
+      "sha256": "bb41bf3b6136c40f7b8818c571a11022dc4ec9868cfc6fe4d5f975e3756b4551"
+    },
+    {
+      "url": "src/training/backend.js",
+      "status": 200,
+      "bytes": 39754,
+      "sha256": "a3974fc790ffbd9dc0a00323d439fa36468a5e876a316bf3acd810f45fef213c"
+    },
+    {
+      "url": "src/training/targets.js",
+      "status": 200,
+      "bytes": 43576,
+      "sha256": "5cc5239af2b743c85a8431b50cabb9d0b64d05d3dea0a7550822a556e6b2b7fa"
+    },
+    {
+      "url": "src/model/backbone.js",
+      "status": 200,
+      "bytes": 9954,
+      "sha256": "02c2fab87306b9fedf3aafa6bdcc52e2bc585b5eb563f197f3abd992d4555707"
+    },
+    {
+      "url": "src/training/model-ops.js",
+      "status": 200,
+      "bytes": 15966,
+      "sha256": "db473f72c4aef150704b608821d77f06f3216d86592c344d79c43a75c945ce9f"
+    },
+    {
+      "url": "src/model/checkpoint-schema.js",
+      "status": 200,
+      "bytes": 40894,
+      "sha256": "1305aca82559e7b5d68a622149b7c5473667d3b0a0a04e83569f921cd86664c4"
+    },
+    {
+      "url": "runtime/tfjs/tfjs-backend-wasm-simd.wasm",
+      "status": 200,
+      "bytes": 424594,
+      "sha256": "77ebb28a6d34f371dbbf2086b7f2de8994acd8ea5a3cf1fa24d2c26c840cac7b"
+    },
+    {
+      "url": "models/yolo26n-features-128.onnx",
+      "status": 200,
+      "bytes": 6100763,
+      "sha256": "a2d8f60b3f6a3f39fc1b4d2f0791c40f6e8a3497a7e01a940c3f6a68cbe57b99"
+    },
+    {
+      "url": "runtime/ort/ort-wasm-simd-threaded.mjs",
+      "status": 200,
+      "bytes": 20321,
+      "sha256": "90a557d15c02bac4504d95b67f431d8594635ed2a0a62a7f2cd83d090ff91d3e"
+    },
+    {
+      "url": "runtime/ort/ort-wasm-simd-threaded.wasm",
+      "status": 200,
+      "bytes": 11905541,
+      "sha256": "45eaee27761ad883742a8d4b8fce1538d60ce43b51adf1726fafccc59b8c1a15"
+    }
+  ],
+  "sourceBindingBefore": {
+    "src/training/engine.js": "768cb14235792d2089184ce94319b9878a7354eac1d9c9396b9697f3fdf4fa4f",
+    "src/training/worker.js": "73716e88f065640fb65ca4b4fa7341f738866ae86d89495c7edbcdffe9db31f6",
+    "src/training/worker-router.js": "28df51307c4a40226aacafc0cff9795d74996f13c25e605849cb0848f007e8cc",
+    "src/training/backend.js": "00e1672dc9c2de554fd3d50946c0f1f9dd03b467121438f36f5bea417335ed12",
+    "src/training/model-ops.js": "f59c75126d8afcf70cf5d596c9203810578575f64464944ffc88ed963983bbe7",
+    "src/training/targets.js": "5276757dbee3f734194ae9e9fc614ad3ecb93f3920cf7f3145d6716889523d98",
+    "src/model/backbone.js": "9aa6a2e5ff1371d127f2aab87f38b1feed70813edb3f5a46a173ae03d07e3899",
+    "src/model/checkpoint-schema.js": "3b9dae2f9606d6f4a298841805634dc853b36fdf13cadd7a671b20f46a171450",
+    "src/model/export-onnx.js": "62d74e25206ed31ef48d3c69a09f1a7cafd1fb10f6829279a2e9b723b5496457",
+    "src/data/formats.js": "b32003fa4bf29b8ab938108178a872e918e215eb68a0a25e4a6b43d66ad82529",
+    "package-lock.json": "9180d788360e5cad55d409a3ac3838701856aaf280f84aabf458c225596dd772",
+    "tests/fixtures/penn-fudan/manifest.json": "928c548f4e88654962431d3220969d59155bfcbe591e6c7a12b6c8445dc0ea50",
+    "public/models/yolo26n-features-128.onnx": "a2d8f60b3f6a3f39fc1b4d2f0791c40f6e8a3497a7e01a940c3f6a68cbe57b99"
+  },
+  "launchMode": "installed Microsoft Edge new headless; isolated temporary profile; --enable-gpu",
+  "browserVersion": "155.0.4283.62",
+  "gpu": {
+    "available": true,
+    "adapter": {
+      "vendor": "nvidia",
+      "architecture": "blackwell",
+      "device": "",
+      "description": "",
+      "isFallbackAdapter": false
+    },
+    "webglRenderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5080 (0x00002C02) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+  },
+  "hardwareGpuConfirmed": true,
+  "workerMutualExclusion": {
+    "concurrentPredictRejected": "BUSY",
+    "ownerProbeCompleted": true
+  },
+  "backendProbes": {
+    "pretrained": {
+      "mode": "pretrained",
+      "backends": [
+        {
+          "backend": "cpu",
+          "mode": "pretrained",
+          "batchSize": 1,
+          "classCount": 2,
+          "supported": true,
+          "verified": true,
+          "loss": 498.2100830078125,
+          "parameterChanged": true,
+          "numericalReference": {
+            "backend": "cpu",
+            "lossRelativeError": 0,
+            "maximumGradientRelativeError": 0,
+            "tolerance": 0.002
+          },
+          "milliseconds": 12.900000005960464,
+          "scope": "actual frozen-feature spatial head forward, loss, gradients, Adam update"
+        },
+        {
+          "backend": "wasm",
+          "mode": "pretrained",
+          "batchSize": 1,
+          "classCount": 2,
+          "supported": true,
+          "verified": true,
+          "loss": 498.2113037109375,
+          "parameterChanged": true,
+          "numericalReference": {
+            "backend": "cpu",
+            "lossRelativeError": 0.000002450177478605663,
+            "maximumGradientRelativeError": 0.0000020286253794682087,
+            "tolerance": 0.002
+          },
+          "milliseconds": 2.9000000059604645,
+          "scope": "actual frozen-feature spatial head forward, loss, gradients, Adam update"
+        },
+        {
+          "backend": "webgl",
+          "mode": "pretrained",
+          "batchSize": 1,
+          "classCount": 2,
+          "supported": true,
+          "verified": true,
+          "loss": 498.2096862792969,
+          "parameterChanged": true,
+          "numericalReference": {
+            "backend": "cpu",
+            "lossRelativeError": 7.963076805468404e-7,
+            "maximumGradientRelativeError": 0.0000019671517621929907,
+            "tolerance": 0.002
+          },
+          "milliseconds": 24,
+          "scope": "actual frozen-feature spatial head forward, loss, gradients, Adam update"
+        },
+        {
+          "backend": "webgpu",
+          "mode": "pretrained",
+          "batchSize": 1,
+          "classCount": 2,
+          "supported": true,
+          "verified": true,
+          "loss": 498.2096862792969,
+          "parameterChanged": true,
+          "numericalReference": {
+            "backend": "cpu",
+            "lossRelativeError": 7.963076805468404e-7,
+            "maximumGradientRelativeError": 0.0000019671517621929907,
+            "tolerance": 0.002
+          },
+          "milliseconds": 9.599999994039536,
+          "scope": "actual frozen-feature spatial head forward, loss, gradients, Adam update"
+        }
+      ]
+    },
+    "scratch": {
+      "mode": "scratch",
+      "backends": [
+        {
+          "backend": "cpu",
+          "mode": "scratch",
+          "batchSize": 1,
+          "classCount": 2,
+          "supported": true,
+          "verified": true,
+          "loss": 118.7504653930664,
+          "parameterChanged": true,
+          "numericalReference": {
+            "backend": "cpu",
+            "lossRelativeError": 0,
+            "maximumGradientRelativeError": 0,
+            "tolerance": 0.002
+          },
+          "milliseconds": 70.30000001192093,
+          "scope": "actual three-convolution detector forward, loss, gradients, Adam update"
+        },
+        {
+          "backend": "wasm",
+          "mode": "scratch",
+          "supported": false,
+          "verified": false,
+          "reason": "Kernel 'Conv2DBackpropFilter' not registered for backend 'wasm'",
+          "milliseconds": 4.5
+        },
+        {
+          "backend": "webgl",
+          "mode": "scratch",
+          "batchSize": 1,
+          "classCount": 2,
+          "supported": true,
+          "verified": true,
+          "loss": 118.75047302246094,
+          "parameterChanged": true,
+          "numericalReference": {
+            "backend": "cpu",
+            "lossRelativeError": 6.424728110324917e-8,
+            "maximumGradientRelativeError": 0.000006592182251382366,
+            "tolerance": 0.002
+          },
+          "milliseconds": 1151.2000000178814,
+          "scope": "actual three-convolution detector forward, loss, gradients, Adam update"
+        },
+        {
+          "backend": "webgpu",
+          "mode": "scratch",
+          "batchSize": 1,
+          "classCount": 2,
+          "supported": true,
+          "verified": true,
+          "loss": 118.75048065185547,
+          "parameterChanged": true,
+          "numericalReference": {
+            "backend": "cpu",
+            "lossRelativeError": 1.2849456220649833e-7,
+            "maximumGradientRelativeError": 0.000006592182251382366,
+            "tolerance": 0.002
+          },
+          "milliseconds": 272.30000001192093,
+          "scope": "actual three-convolution detector forward, loss, gradients, Adam update"
+        }
+      ]
+    }
+  },
+  "accelerationRuns": [
+    {
+      "mode": "pretrained",
+      "backend": "webgl",
+      "status": "completed",
+      "evidence": {
+        "runId": "2a5b9818-5d99-4d60-b576-6483eafda6bd",
+        "steps": 6,
+        "firstLoss": 1.4969992637634277,
+        "lastLoss": 1.111271858215332,
+        "firstGradient": {
+          "norm": 2.3393895789573254,
+          "maxAbsolute": 0.9557363986968994,
+          "values": 4524,
+          "finite": true
+        },
+        "maxGradientNorm": 3.35270496544674,
+        "initialWeightHash": "43645a32937d64bafbd6ec5c4ecaaf8684aa2a014eaecf606817c9107f402770",
+        "finalWeightHash": "743360bf75cd829b90363aafe27c1f76bb578215d10317988337a531c6779651",
+        "parametersChanged": true,
+        "datasetHash": "8bf08566c58890077607386863b5d90d85a4a1396ec15a7cfde1223544f8de09",
+        "datasetChanged": false,
+        "trainingImages": 4,
+        "validationImages": 0,
+        "initialMetrics": {
+          "available": false,
+          "images": 0,
+          "reason": "NO_HELD_OUT_IMAGES"
+        },
+        "elapsedMs": 1601.2000000178814,
+        "scope": "frozen YOLO26n features; spatial head parameters trained",
+        "limitations": [
+          "This is not full YOLO26 training.",
+          "No held-out validation images; generalization was not measured."
+        ]
+      },
+      "actualConfig": {
+        "mode": "pretrained",
+        "resolution": 128,
+        "batchSize": 2,
+        "epochs": 3,
+        "learningRate": 0.003,
+        "augment": false,
+        "seed": 12345,
+        "backend": "webgl",
+        "lossVersion": "focal-kl-v1",
+        "preprocessingVersion": "canvas-high-v1"
+      },
+      "backendProbe": {
+        "backend": "webgl",
+        "mode": "pretrained",
+        "batchSize": 2,
+        "classCount": 1,
+        "supported": true,
+        "verified": true,
+        "loss": 497.51654052734375,
+        "parameterChanged": true,
+        "numericalReference": {
+          "backend": "cpu",
+          "lossRelativeError": 7.974171046582347e-7,
+          "maximumGradientRelativeError": 0.000004057250509523043,
+          "tolerance": 0.002
+        },
+        "milliseconds": 885.4000000059605,
+        "scope": "actual frozen-feature spatial head forward, loss, gradients, Adam update",
+        "attempts": [
+          {
+            "backend": "webgl",
+            "mode": "pretrained",
+            "batchSize": 2,
+            "classCount": 1,
+            "supported": true,
+            "verified": true,
+            "loss": 497.51654052734375,
+            "parameterChanged": true,
+            "numericalReference": {
+              "backend": "cpu",
+              "lossRelativeError": 7.974171046582347e-7,
+              "maximumGradientRelativeError": 0.000004057250509523043,
+              "tolerance": 0.002
+            },
+            "milliseconds": 885.4000000059605,
+            "scope": "actual frozen-feature spatial head forward, loss, gradients, Adam update"
+          }
+        ],
+        "backboneBackend": "wasm"
+      },
+      "reloadedPredictionCount": 100,
+      "exactReload": true,
+      "scope": "Four generated rectangle PNG Blobs; real hardware accelerated gradient/update and reload regression, not photographic accuracy evidence."
+    },
+    {
+      "mode": "pretrained",
+      "backend": "webgpu",
+      "status": "completed",
+      "evidence": {
+        "runId": "a1d3a29d-8c3b-4377-811b-aaee59bae9a2",
+        "steps": 6,
+        "firstLoss": 1.4969992637634277,
+        "lastLoss": 1.111271858215332,
+        "firstGradient": {
+          "norm": 2.339389558684649,
+          "maxAbsolute": 0.9557363986968994,
+          "values": 4524,
+          "finite": true
+        },
+        "maxGradientNorm": 3.352704971137331,
+        "initialWeightHash": "43645a32937d64bafbd6ec5c4ecaaf8684aa2a014eaecf606817c9107f402770",
+        "finalWeightHash": "2a9743f46bf4015f033c39b630e3b8d55648b5be364060dd40749ebaf4ca653d",
+        "parametersChanged": true,
+        "datasetHash": "8bf08566c58890077607386863b5d90d85a4a1396ec15a7cfde1223544f8de09",
+        "datasetChanged": false,
+        "trainingImages": 4,
+        "validationImages": 0,
+        "initialMetrics": {
+          "available": false,
+          "images": 0,
+          "reason": "NO_HELD_OUT_IMAGES"
+        },
+        "elapsedMs": 444.19999998807907,
+        "scope": "frozen YOLO26n features; spatial head parameters trained",
+        "limitations": [
+          "This is not full YOLO26 training.",
+          "No held-out validation images; generalization was not measured."
+        ]
+      },
+      "actualConfig": {
+        "mode": "pretrained",
+        "resolution": 128,
+        "batchSize": 2,
+        "epochs": 3,
+        "learningRate": 0.003,
+        "augment": false,
+        "seed": 12345,
+        "backend": "webgpu",
+        "lossVersion": "focal-kl-v1",
+        "preprocessingVersion": "canvas-high-v1"
+      },
+      "backendProbe": {
+        "backend": "webgpu",
+        "mode": "pretrained",
+        "batchSize": 2,
+        "classCount": 1,
+        "supported": true,
+        "verified": true,
+        "loss": 497.51654052734375,
+        "parameterChanged": true,
+        "numericalReference": {
+          "backend": "cpu",
+          "lossRelativeError": 7.974171046582347e-7,
+          "maximumGradientRelativeError": 0.000004057250509523043,
+          "tolerance": 0.002
+        },
+        "milliseconds": 213.59999999403954,
+        "scope": "actual frozen-feature spatial head forward, loss, gradients, Adam update",
+        "attempts": [
+          {
+            "backend": "webgpu",
+            "mode": "pretrained",
+            "batchSize": 2,
+            "classCount": 1,
+            "supported": true,
+            "verified": true,
+            "loss": 497.51654052734375,
+            "parameterChanged": true,
+            "numericalReference": {
+              "backend": "cpu",
+              "lossRelativeError": 7.974171046582347e-7,
+              "maximumGradientRelativeError": 0.000004057250509523043,
+              "tolerance": 0.002
+            },
+            "milliseconds": 213.59999999403954,
+            "scope": "actual frozen-feature spatial head forward, loss, gradients, Adam update"
+          }
+        ],
+        "backboneBackend": "wasm"
+      },
+      "reloadedPredictionCount": 100,
+      "exactReload": true,
+      "scope": "Four generated rectangle PNG Blobs; real hardware accelerated gradient/update and reload regression, not photographic accuracy evidence."
+    },
+    {
+      "mode": "scratch",
+      "backend": "webgl",
+      "status": "completed",
+      "evidence": {
+        "runId": "550dcd81-1c8a-41a8-ac40-266f8db6596d",
+        "steps": 6,
+        "firstLoss": 1.5343120098114014,
+        "lastLoss": 1.1136207580566406,
+        "firstGradient": {
+          "norm": 2.321631737739405,
+          "maxAbsolute": 1.0359781980514526,
+          "values": 3784,
+          "finite": true
+        },
+        "maxGradientNorm": 5.080870530918436,
+        "initialWeightHash": "559c9d58321a2b508da3cc2647cf5b7838444ef797173de1037349de0c49e3b3",
+        "finalWeightHash": "081bef9943f2c6ec584c6984c4731b61f9c5d7bb2cbc98bb6a85877dc2c19ea4",
+        "parametersChanged": true,
+        "datasetHash": "8bf08566c58890077607386863b5d90d85a4a1396ec15a7cfde1223544f8de09",
+        "datasetChanged": false,
+        "trainingImages": 4,
+        "validationImages": 0,
+        "initialMetrics": {
+          "available": false,
+          "images": 0,
+          "reason": "NO_HELD_OUT_IMAGES"
+        },
+        "elapsedMs": 2207.199999988079,
+        "scope": "all small randomly initialized detector parameters trained",
+        "limitations": [
+          "This is not full YOLO26 training.",
+          "No held-out validation images; generalization was not measured."
+        ]
+      },
+      "actualConfig": {
+        "mode": "scratch",
+        "resolution": 128,
+        "batchSize": 2,
+        "epochs": 3,
+        "learningRate": 0.003,
+        "augment": false,
+        "seed": 12345,
+        "backend": "webgl",
+        "lossVersion": "focal-kl-v1",
+        "preprocessingVersion": "canvas-high-v1"
+      },
+      "backendProbe": {
+        "backend": "webgl",
+        "mode": "scratch",
+        "batchSize": 2,
+        "classCount": 1,
+        "supported": true,
+        "verified": true,
+        "loss": 118.05732727050781,
+        "parameterChanged": true,
+        "numericalReference": {
+          "backend": "cpu",
+          "lossRelativeError": 6.462449388519808e-8,
+          "maximumGradientRelativeError": 0.00004330785852947558,
+          "tolerance": 0.002
+        },
+        "milliseconds": 1078.7999999821186,
+        "scope": "actual three-convolution detector forward, loss, gradients, Adam update",
+        "attempts": [
+          {
+            "backend": "webgl",
+            "mode": "scratch",
+            "batchSize": 2,
+            "classCount": 1,
+            "supported": true,
+            "verified": true,
+            "loss": 118.05732727050781,
+            "parameterChanged": true,
+            "numericalReference": {
+              "backend": "cpu",
+              "lossRelativeError": 6.462449388519808e-8,
+              "maximumGradientRelativeError": 0.00004330785852947558,
+              "tolerance": 0.002
+            },
+            "milliseconds": 1078.7999999821186,
+            "scope": "actual three-convolution detector forward, loss, gradients, Adam update"
+          }
+        ],
+        "backboneBackend": null
+      },
+      "reloadedPredictionCount": 100,
+      "exactReload": true,
+      "scope": "Four generated rectangle PNG Blobs; real hardware accelerated gradient/update and reload regression, not photographic accuracy evidence."
+    },
+    {
+      "mode": "scratch",
+      "backend": "webgpu",
+      "status": "completed",
+      "evidence": {
+        "runId": "ced204cd-3a4f-4079-ab40-529a9f4b21b7",
+        "steps": 6,
+        "firstLoss": 1.5343122482299805,
+        "lastLoss": 1.1136205196380615,
+        "firstGradient": {
+          "norm": 2.3216318068550588,
+          "maxAbsolute": 1.0359783172607422,
+          "values": 3784,
+          "finite": true
+        },
+        "maxGradientNorm": 5.0808706387287925,
+        "initialWeightHash": "559c9d58321a2b508da3cc2647cf5b7838444ef797173de1037349de0c49e3b3",
+        "finalWeightHash": "883393e535404a2afcec528f6e0fc39c329356b3e47951e58d94808d1626c511",
+        "parametersChanged": true,
+        "datasetHash": "8bf08566c58890077607386863b5d90d85a4a1396ec15a7cfde1223544f8de09",
+        "datasetChanged": false,
+        "trainingImages": 4,
+        "validationImages": 0,
+        "initialMetrics": {
+          "available": false,
+          "images": 0,
+          "reason": "NO_HELD_OUT_IMAGES"
+        },
+        "elapsedMs": 683.0999999940395,
+        "scope": "all small randomly initialized detector parameters trained",
+        "limitations": [
+          "This is not full YOLO26 training.",
+          "No held-out validation images; generalization was not measured."
+        ]
+      },
+      "actualConfig": {
+        "mode": "scratch",
+        "resolution": 128,
+        "batchSize": 2,
+        "epochs": 3,
+        "learningRate": 0.003,
+        "augment": false,
+        "seed": 12345,
+        "backend": "webgpu",
+        "lossVersion": "focal-kl-v1",
+        "preprocessingVersion": "canvas-high-v1"
+      },
+      "backendProbe": {
+        "backend": "webgpu",
+        "mode": "scratch",
+        "batchSize": 2,
+        "classCount": 1,
+        "supported": true,
+        "verified": true,
+        "loss": 118.05736541748047,
+        "parameterChanged": true,
+        "numericalReference": {
+          "backend": "cpu",
+          "lossRelativeError": 3.877469633111885e-7,
+          "maximumGradientRelativeError": 0.00004330785852947558,
+          "tolerance": 0.002
+        },
+        "milliseconds": 165.2999999821186,
+        "scope": "actual three-convolution detector forward, loss, gradients, Adam update",
+        "attempts": [
+          {
+            "backend": "webgpu",
+            "mode": "scratch",
+            "batchSize": 2,
+            "classCount": 1,
+            "supported": true,
+            "verified": true,
+            "loss": 118.05736541748047,
+            "parameterChanged": true,
+            "numericalReference": {
+              "backend": "cpu",
+              "lossRelativeError": 3.877469633111885e-7,
+              "maximumGradientRelativeError": 0.00004330785852947558,
+              "tolerance": 0.002
+            },
+            "milliseconds": 165.2999999821186,
+            "scope": "actual three-convolution detector forward, loss, gradients, Adam update"
+          }
+        ],
+        "backboneBackend": null
+      },
+      "reloadedPredictionCount": 100,
+      "exactReload": true,
+      "scope": "Four generated rectangle PNG Blobs; real hardware accelerated gradient/update and reload regression, not photographic accuracy evidence."
+    }
+  ],
+  "sourceBindingAfter": {
+    "src/training/engine.js": "768cb14235792d2089184ce94319b9878a7354eac1d9c9396b9697f3fdf4fa4f",
+    "src/training/worker.js": "73716e88f065640fb65ca4b4fa7341f738866ae86d89495c7edbcdffe9db31f6",
+    "src/training/worker-router.js": "28df51307c4a40226aacafc0cff9795d74996f13c25e605849cb0848f007e8cc",
+    "src/training/backend.js": "00e1672dc9c2de554fd3d50946c0f1f9dd03b467121438f36f5bea417335ed12",
+    "src/training/model-ops.js": "f59c75126d8afcf70cf5d596c9203810578575f64464944ffc88ed963983bbe7",
+    "src/training/targets.js": "5276757dbee3f734194ae9e9fc614ad3ecb93f3920cf7f3145d6716889523d98",
+    "src/model/backbone.js": "9aa6a2e5ff1371d127f2aab87f38b1feed70813edb3f5a46a173ae03d07e3899",
+    "src/model/checkpoint-schema.js": "3b9dae2f9606d6f4a298841805634dc853b36fdf13cadd7a671b20f46a171450",
+    "src/model/export-onnx.js": "62d74e25206ed31ef48d3c69a09f1a7cafd1fb10f6829279a2e9b723b5496457",
+    "src/data/formats.js": "b32003fa4bf29b8ab938108178a872e918e215eb68a0a25e4a6b43d66ad82529",
+    "package-lock.json": "9180d788360e5cad55d409a3ac3838701856aaf280f84aabf458c225596dd772",
+    "tests/fixtures/penn-fudan/manifest.json": "928c548f4e88654962431d3220969d59155bfcbe591e6c7a12b6c8445dc0ea50",
+    "public/models/yolo26n-features-128.onnx": "a2d8f60b3f6a3f39fc1b4d2f0791c40f6e8a3497a7e01a940c3f6a68cbe57b99"
+  },
+  "sourceFilesChangedDuringRun": [],
+  "completedAt": "2026-10-22T00:04:00.054Z",
+  "subsequentCompatibilityOnlyChanges": {
+    "recordedAt": "2026-10-22T00:11:16.431Z",
+    "numericBrowserPathChanged": false,
+    "changes": [
+      {
+        "file": "src/training/engine.js",
+        "scope": "Reject noncanonical typed-pixel test inputs requiring resize; production original-Blob Canvas-high path unchanged.",
+        "currentSha256": "7b2f3e7858856dea71882879b8201dd5561735007edd184a47564379641c6704"
+      },
+      {
+        "file": "src/training/backend.js",
+        "scope": "Node uses installed package WASM path; browser retains explicit same-origin WASM path. Actual Node WASM gradient/Adam test added.",
+        "currentSha256": "0fdf1a8f276f7abde477b5a189a0ed61945109464510ffd9c5797c3844b5e809"
+      },
+      {
+        "file": "src/model/checkpoint-schema.js",
+        "scope": "Require complete epochOrder/epochLossSum/epochBatches for exact continuation. All actual generated checkpoints contain them; no training arithmetic changes.",
+        "currentSha256": "f52c6e041f43163a40a819ed7f302530e228913d04ba276690a97bdc5777499a"
+      }
+    ],
+    "verification": "53/53 complete unit tests, 0 skipped; later source-bound performance run accepts the same trained-checkpoint contract. Final test8 quality not rerun for these nonnumerical repairs."
+  }
+}

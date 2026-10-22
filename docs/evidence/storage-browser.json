@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "status": "pass",
+  "timestamp": "2026-10-21T23:57:16.539Z",
+  "origin": "http://127.0.0.1:5173",
+  "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36",
+  "checkpointRotation": {
+    "status": "pass",
+    "currentStep": 2,
+    "previousStep": 1,
+    "actualOptimizedCheckpoints": true
+  },
+  "checkpointAtomicFailure": {
+    "status": "pass",
+    "injectedOperation": "Duplicate-key current write (native IDB.add) after previous write queued",
+    "actualError": {
+      "name": "ConstraintError",
+      "message": "Key already exists in the object store."
+    },
+    "currentAndPreviousRetained": true
+  },
+  "backupRestore": {
+    "status": "pass",
+    "originalId": "fd6b7341-6630-4292-969e-57ced46c7895",
+    "restoredId": "4489f17a-7086-4a2c-9f16-9be64f653546",
+    "sourceUnchanged": true,
+    "exactImageSha256": "4d6f7289906d978418a1946f793f83da3d28cc4d3bebdbd462bd7c7aef31e22b",
+    "boxesPreserved": true,
+    "digestStable": true,
+    "duplicateImportRejected": true,
+    "directInvalidCheckpointRejected": true,
+    "directBadImageRejected": true
+  },
+  "commitOrdering": {
+    "status": "pass",
+    "events": [
+      "pending",
+      "saving",
+      "actual-idb-oncomplete",
+      "saved"
+    ]
+  },
+  "quotaFaultInjection": {
+    "status": "pass",
+    "error": "QuotaExceededError",
+    "states": [
+      "pending",
+      "saving",
+      "error",
+      "saving",
+      "saved"
+    ],
+    "dirtyRetained": true,
+    "actualRetryCommitted": true,
+    "limitation": "QuotaExceededError was injected at IDB.put; this does not claim the physical disk or browser storage quota was full."
+  },
+  "atomicPictureRemoval": {
+    "status": "pass",
+    "failure": "ConstraintError",
+    "referencesAndPhotoRetainedOnFailure": true,
+    "staleRemovalRejected": true,
+    "noOrphanPhotoOrThumbnailAfterSuccess": true,
+    "savedCurrentAndPreviousModelsKept": true,
+    "restoredProjectIndependent": true
+  },
+  "corruptRecordIsolation": {
+    "status": "pass",
+    "invalidRecordsSkipped": 1,
+    "healthyProjectsListed": 2,
+    "invalidStoredRecordPreserved": true,
+    "injection": "A timestamp was deliberately corrupted through raw IDB, bypassing the public import validator."
+  },
+  "sourceHashes": {
+    "package.json": "166169d63772419bc4ef45aef4499ec016abdc8a12ff59df9818750681e54ebc",
+    "package-lock.json": "9180d788360e5cad55d409a3ac3838701856aaf280f84aabf458c225596dd772",
+    "src/data/project.js": "0123439d4ec6024c9794e24efe099db270f7b412fd6632bc901a08bfade82648",
+    "src/data/formats.js": "b32003fa4bf29b8ab938108178a872e918e215eb68a0a25e4a6b43d66ad82529",
+    "src/data/storage.js": "2c1fcef868f6bec1b7b915abfbdf4c614755478583ff52a8e64dc9e08a96616e",
+    "src/model/checkpoint-schema.js": "9f17a8acaefff409c913999e68952217e047f3c782b1edbccd24d7cdba280c37",
+    "src/model/backbone.js": "9aa6a2e5ff1371d127f2aab87f38b1feed70813edb3f5a46a173ae03d07e3899",
+    "src/training/engine.js": "00cdebbbc817807891fbf247e8e3b317aab84643499496acd8690497f7be44d4",
+    "src/training/backend.js": "9fb8a9b65b718d22c2346a21e0f74a2cbf29f6ed515cf925f5a700ac9f9e6136",
+    "src/training/model-ops.js": "3aabd7b35b16fc63e84a8ed2257f129ae27cf434715f6e4d0271ff99895950a8",
+    "src/training/targets.js": "5276757dbee3f734194ae9e9fc614ad3ecb93f3920cf7f3145d6716889523d98",
+    "public/models/yolo26n-features-128.onnx": "a2d8f60b3f6a3f39fc1b4d2f0791c40f6e8a3497a7e01a940c3f6a68cbe57b99"
+  },
+  "pageErrors": []
+}

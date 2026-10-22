@@ -1,0 +1,30 @@
+{
+  "name": "local-yolo-trainer-minimal",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "scripts": {
+    "dev": "node scripts/prepare-assets.mjs && vite --host 0.0.0.0",
+    "build": "node scripts/prepare-assets.mjs && vite build && node scripts/check-build.mjs",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "node --test tests/annotation-browser.mjs tests/app-ui-browser.mjs tests/storage-browser.mjs tests/media-browser.mjs",
+    "test:training-browser": "node tests/training-browser.mjs",
+    "fixtures:real": "node scripts/prepare-real-fixtures.mjs"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "4.22.0",
+    "@tensorflow/tfjs-core": "4.22.0",
+    "@tensorflow/tfjs-backend-cpu": "4.22.0",
+    "@tensorflow/tfjs-backend-webgl": "4.22.0",
+    "@tensorflow/tfjs-backend-wasm": "4.22.0",
+    "@tensorflow/tfjs-backend-webgpu": "4.22.0",
+    "fflate": "0.8.2",
+    "onnxruntime-web": "1.23.2"
+  },
+  "devDependencies": {
+    "vite": "7.3.7",
+    "playwright": "1.64.1"
+  }
+}

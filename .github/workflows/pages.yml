@@ -1,0 +1,65 @@
+name: Verify and deploy Trainer
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: trainer-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:browser
+      - name: Prepare attributed developer-only photo fixtures
+        run: npm run fixtures:real
+      - name: Verify actual browser Worker training and model round trip
+        run: npm run test:training-browser
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: trainer-browser-evidence
+          path: |
+            test-results/*.json
+            test-results/*.onnx
+            test-results/*.lymodel
+            test-results/ui/*.json
+            test-results/ui/*.png
+            test-results/ui/history/*.json
+          if-no-files-found: ignore
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: verify
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - name: Deploy static application
+        id: deployment
+        uses: actions/deploy-pages@v4

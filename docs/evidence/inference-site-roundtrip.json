@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "status": "pass",
+  "checkedAt": "2026-10-22T00:10:58.583Z",
+  "website": "https://unowhatpvp-alt.github.io/local-yolo/",
+  "inferenceSourceCommit": "435a299fbe60c8e0fe4570c9e0cc8f944f37ecbc",
+  "modelSha256": "a0984b956a69b41535bc458ff721db01e67eb6905a6e92a7123f613eca437e61",
+  "input": {
+    "relativePath": "tests/fixtures/penn-fudan/images/PennPed00096.png",
+    "sha256": "20613cb2aa60f654950c3275657f2892968f6e8b96cc13ad1fdf64a596976d46",
+    "width": 294,
+    "height": 331
+  },
+  "preprocessingVersion": "canvas-high-v1",
+  "confidence": 0.25,
+  "nmsIou": 0.45,
+  "items": 2,
+  "maximumCoordinateError": 0.000011113447044408531,
+  "maximumScoreError": 2.4893760275368493e-8,
+  "coordinateTolerance": 0.001,
+  "scoreTolerance": 0.00001,
+  "actualBackend": "WASM",
+  "latencyMs": 10,
+  "scope": "Real manual browser import of the exported ONNX, original image inference and JSON download. Numerical compatibility only; not a new independent accuracy evaluation."
+}
