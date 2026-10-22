@@ -1,0 +1,1449 @@
+{
+  "startedAt": "2026-10-22T00:10:12.483Z",
+  "passed": true,
+  "scope": "Actual local original PNG Blob training, 32 train and 8 validation, 20 epochs, WASM. Timing-only method wrappers; no test8 photographs or predictions.",
+  "sourceBefore": {
+    "src/training/engine.js": "7b2f3e7858856dea71882879b8201dd5561735007edd184a47564379641c6704",
+    "src/training/backend.js": "0fdf1a8f276f7abde477b5a189a0ed61945109464510ffd9c5797c3844b5e809",
+    "src/training/model-ops.js": "f59c75126d8afcf70cf5d596c9203810578575f64464944ffc88ed963983bbe7",
+    "src/training/targets.js": "5276757dbee3f734194ae9e9fc614ad3ecb93f3920cf7f3145d6716889523d98",
+    "src/training/worker-router.js": "28df51307c4a40226aacafc0cff9795d74996f13c25e605849cb0848f007e8cc",
+    "src/model/checkpoint-schema.js": "f52c6e041f43163a40a819ed7f302530e228913d04ba276690a97bdc5777499a",
+    "public/models/yolo26n-features-128.onnx": "a2d8f60b3f6a3f39fc1b4d2f0791c40f6e8a3497a7e01a940c3f6a68cbe57b99",
+    "package-lock.json": "9180d788360e5cad55d409a3ac3838701856aaf280f84aabf458c225596dd772"
+  },
+  "config": {
+    "mode": "pretrained",
+    "backend": "wasm",
+    "epochs": 20,
+    "batchSize": 4,
+    "learningRate": 0.003,
+    "augment": true,
+    "seed": 12345
+  },
+  "pageErrors": [],
+  "browser": "155.0.4283.62",
+  "dataset": {
+    "train": 32,
+    "validation": 8,
+    "inputSha256": [
+      {
+        "id": "FudanPed00002",
+        "sha256": "42f94e40ca5857687be170ecdebef0ee41094e5386160e0c756f0c94a735d39e"
+      },
+      {
+        "id": "FudanPed00029",
+        "sha256": "85798d75e2f35b675b86c029decdf886ef4b0122fba00238c4441136930d81cc"
+      },
+      {
+        "id": "PennPed00002",
+        "sha256": "f592a20cdb786a09d1ee2ba8fcfed7adb80fc9d9ff40069f75400b7dcd94f55c"
+      },
+      {
+        "id": "FudanPed00001",
+        "sha256": "130e9f9121b88ab69105f1685ce17625e97d0ef590adb9b9f076f62fc08b3343"
+      },
+      {
+        "id": "PennPed00063",
+        "sha256": "f98c75b5d6016c37f9c0ba0be1391dec96535fc909525902c95d3dd5d97dbc78"
+      },
+      {
+        "id": "FudanPed00026",
+        "sha256": "7a108cfe65ba5c2c89ea0400095685811854d78c618a39cd6298d183666c8780"
+      },
+      {
+        "id": "FudanPed00034",
+        "sha256": "fd3a874d822f03357cd213696f583bf990d50ee7a68463e5118c3b7a9b60d666"
+      },
+      {
+        "id": "PennPed00037",
+        "sha256": "54a2b4caeff8b47e38160c8cc93eed14f341e5189dbad2ad29f90a238645925a"
+      },
+      {
+        "id": "PennPed00035",
+        "sha256": "880cf75fe5bd0d89bb836bdb29e9d1d8a3685c9af9aec1b3c7d4492eb56f2c58"
+      },
+      {
+        "id": "PennPed00017",
+        "sha256": "fe40f760d161188efa7afeb0fbd38a7a1b36a5b7d55112a0e7958cb9857b9311"
+      },
+      {
+        "id": "PennPed00042",
+        "sha256": "e709c41872b490b3cc2120b9251b8bad29c3f0d47e7b928dc98a292191688ec6"
+      },
+      {
+        "id": "PennPed00021",
+        "sha256": "b2f9df0c5a67504ed9bed82191f76cfd349ad2dfc5510e2616e6ba181dde36b2"
+      },
+      {
+        "id": "PennPed00029",
+        "sha256": "1de4928a9f5b8ea02ff7c540e28b715a3aef2b9f347ce7ec444fa4f9f5e3a388"
+      },
+      {
+        "id": "FudanPed00018",
+        "sha256": "503db5cbf8a4d2f68e7a191656320163a74b0d0a7e7a0de0bc7645c7330379e6"
+      },
+      {
+        "id": "PennPed00062",
+        "sha256": "0449c9cb5c5eea2c97d05bd234be1c6fd8a2a10af73b42ff2b5b6d0fb2d2ef1f"
+      },
+      {
+        "id": "FudanPed00031",
+        "sha256": "07895e88c4b37891f1e10581deef07760649ef806b7e50943b85920ba8e6ac05"
+      },
+      {
+        "id": "FudanPed00040",
+        "sha256": "6b90d12818232a8b5ea8b4262d48f7baac29f9dcffb802812ca3a02acd499845"
+      },
+      {
+        "id": "PennPed00056",
+        "sha256": "b6af49c3e8536132683f112913a872656b5a43891a503e5c94abe3091b48f186"
+      },
+      {
+        "id": "PennPed00061",
+        "sha256": "20b064554baedefdd2ccdf058047df35b432013adc2e4c89f6374dc12ae3796f"
+      },
+      {
+        "id": "FudanPed00022",
+        "sha256": "90b0d600f87345555e4264e55137389ddb8a75e847b1828d13e31de5f812c45e"
+      },
+      {
+        "id": "FudanPed00028",
+        "sha256": "1ec63cb8a132e1a309aee66763940a15c556f91a1fd32a72e4c7ec5b7de009a3"
+      },
+      {
+        "id": "PennPed00048",
+        "sha256": "bc8ef60be7cb795d5ec20f44643c1990b8778c54592cebf0d31327cbb0b2fc04"
+      },
+      {
+        "id": "FudanPed00045",
+        "sha256": "932e97b8d33e3c58c604b850fcb6a9a68fd6998ec92d1dd1a268edac76d6d86c"
+      },
+      {
+        "id": "FudanPed00008",
+        "sha256": "4c3f3a2bbd2632442d3531fe3ce4299bfadd8e4c65a0d1df8d328ca97cd223ec"
+      },
+      {
+        "id": "PennPed00015",
+        "sha256": "da2663a4eaf5fa294ff0d53b172cde50746857d873ee2ad1dc111d08908406a8"
+      },
+      {
+        "id": "FudanPed00005",
+        "sha256": "4de7a665b06b680c715c2d6941611bb372ac0c33d98a09ac1673cbe6af1a66f7"
+      },
+      {
+        "id": "PennPed00004",
+        "sha256": "40fd028872365a0f41f3a0680075756c315879462e56e014e5bdc1f7d570087b"
+      },
+      {
+        "id": "PennPed00014",
+        "sha256": "a04437ea5bc66466c06d2f7a6e493cd5150864b15420036698440d82498d49f4"
+      },
+      {
+        "id": "FudanPed00007",
+        "sha256": "7b5b874dc8940fc62afe7fb57b8e99dccc8908c8e8177609afdc1d5436c353a7"
+      },
+      {
+        "id": "FudanPed00043",
+        "sha256": "af2dfd6ca0e27005d25d563b27b9a44229b7da7be1be2c766b22eb7c016ddd59"
+      },
+      {
+        "id": "PennPed00059",
+        "sha256": "18b2de8030d54f74289ebe67c265faf5be89c9ae079d59208c2c89346a81c573"
+      },
+      {
+        "id": "PennPed00052",
+        "sha256": "013d6f5301dba88f4d9d678a9b46237458f96476fbe42f682d0b01d2c4ec9eaa"
+      },
+      {
+        "id": "PennPed00081",
+        "sha256": "b9cf27aff00b5d3c745cfde35b77a0e9d1966291cfa462ffe73d7ac4cb190f24"
+      },
+      {
+        "id": "FudanPed00068",
+        "sha256": "5df539028a6f42d55efd0f35affc06551821372bda5f9d554bfcf62c691d7788"
+      },
+      {
+        "id": "FudanPed00053",
+        "sha256": "d13b3932c3fad5cd25385e881fb1a119cb269dde8a3e8693f47482ca26f6337b"
+      },
+      {
+        "id": "FudanPed00058",
+        "sha256": "47802584f435e449f42e838834dc18c016e7bdfcedda9cee1a781d85d5e992fd"
+      },
+      {
+        "id": "PennPed00077",
+        "sha256": "a3da377ff6246bf54759e029727681b8496d4d1554212c54a75b76469ded1a12"
+      },
+      {
+        "id": "PennPed00065",
+        "sha256": "51bfd97ed3f6286d0d64ae3fc7372aa8873d88c28e6f197930ab006027155dcb"
+      },
+      {
+        "id": "PennPed00095",
+        "sha256": "a61e2030a7f644689b0508d64f112fb254141e986169b8322bab9954d71bcbf7"
+      },
+      {
+        "id": "PennPed00074",
+        "sha256": "f808c322abdcf6689739eae3569fd50b175104156b459f178869071058bc53a7"
+      }
+    ]
+  },
+  "measurements": {
+    "rpcElapsedMs": 2153.7000000178814,
+    "engineElapsedMs": 2152.0999999940395,
+    "evidence": {
+      "runId": "6c27aaaf-44cf-4552-b70e-fe7f7b105fe8",
+      "steps": 160,
+      "firstLoss": 1.7214696407318115,
+      "lastLoss": 0.4679279625415802,
+      "firstGradient": {
+        "norm": 2.1813015365169175,
+        "maxAbsolute": 0.7241860628128052,
+        "values": 4524,
+        "finite": true
+      },
+      "maxGradientNorm": 6.661709536186326,
+      "initialWeightHash": "43645a32937d64bafbd6ec5c4ecaaf8684aa2a014eaecf606817c9107f402770",
+      "finalWeightHash": "47902c890ea3fc40072f03679a424f2bc6a41745955590a4efd28c1e9cfb27c2",
+      "parametersChanged": true,
+      "datasetHash": "8cd9298dd0e759172753ca7198a81699c1b65af6879b97f63f5ae6dfb5a8b8d6",
+      "datasetChanged": false,
+      "trainingImages": 32,
+      "validationImages": 8,
+      "initialMetrics": {
+        "available": true,
+        "images": 8,
+        "truePositives": 0,
+        "falsePositives": 0,
+        "falseNegatives": 21,
+        "precision50": null,
+        "recall50": 0,
+        "meanMatchedIou": null
+      },
+      "elapsedMs": 2152.0999999940395,
+      "scope": "frozen YOLO26n features; spatial head parameters trained",
+      "limitations": [
+        "This is not full YOLO26 training."
+      ]
+    },
+    "backend": "wasm",
+    "timings": {
+      "initialization": [
+        214.5
+      ],
+      "preparation": [
+        109.09999999403954
+      ],
+      "featureExtraction": [
+        14,
+        5.299999982118607,
+        5.0999999940395355,
+        5.100000023841858,
+        5.200000017881393,
+        5.5999999940395355,
+        5.199999988079071,
+        5.200000017881393,
+        5.199999988079071,
+        5.199999988079071,
+        5.100000023841858,
+        4.800000011920929,
+        5,
+        5.200000017881393,
+        5.0999999940395355,
+        5,
+        5,
+        5.200000017881393,
+        5.0999999940395355,
+        5.0999999940395355,
+        4.9000000059604645,
+        5.0999999940395355,
+        4.9000000059604645,
+        4.9000000059604645,
+        5,
+        5.0999999940395355,
+        5.200000017881393,
+        5.199999988079071,
+        4.800000011920929,
+        5.199999988079071,
+        5.199999988079071,
+        5.199999988079071,
+        5,
+        4.9000000059604645,
+        4.899999976158142,
+        4.899999976158142,
+        5.300000011920929,
+        5.0999999940395355,
+        5.199999988079071,
+        4.800000011920929,
+        5.199999988079071,
+        4.9000000059604645,
+        4.799999982118607,
+        4.799999982118607,
+        4.9000000059604645,
+        5.199999988079071,
+        5.200000017881393,
+        5.199999988079071,
+        5.100000023841858,
+        5.199999988079071,
+        5,
+        5.300000011920929,
+        5.200000017881393,
+        5.899999976158142,
+        5.300000011920929,
+        5.299999982118607,
+        5.399999976158142,
+        5.300000011920929,
+        5.699999988079071,
+        5.5999999940395355,
+        5.100000023841858,
+        5.199999988079071,
+        5.9000000059604645,
+        5.5,
+        5.5,
+        5.5,
+        5.199999988079071,
+        5.5999999940395355,
+        5.5,
+        5.5,
+        5.5,
+        5.4000000059604645
+      ],
+      "epochBoundaries": [
+        {
+          "epoch": 0,
+          "time": 2020.7999999821186,
+          "step": 0
+        },
+        {
+          "epoch": 1,
+          "time": 2241.4000000059605,
+          "step": 8
+        },
+        {
+          "epoch": 2,
+          "time": 2409.5999999940395,
+          "step": 16
+        },
+        {
+          "epoch": 3,
+          "time": 2520.699999988079,
+          "step": 24
+        },
+        {
+          "epoch": 4,
+          "time": 2603.7999999821186,
+          "step": 32
+        },
+        {
+          "epoch": 5,
+          "time": 2683.5,
+          "step": 40
+        },
+        {
+          "epoch": 6,
+          "time": 2771.699999988079,
+          "step": 48
+        },
+        {
+          "epoch": 7,
+          "time": 2847.2999999821186,
+          "step": 56
+        },
+        {
+          "epoch": 8,
+          "time": 2927.199999988079,
+          "step": 64
+        },
+        {
+          "epoch": 9,
+          "time": 2998.5999999940395,
+          "step": 72
+        },
+        {
+          "epoch": 10,
+          "time": 3072,
+          "step": 80
+        },
+        {
+          "epoch": 11,
+          "time": 3143.5,
+          "step": 88
+        },
+        {
+          "epoch": 12,
+          "time": 3215,
+          "step": 96
+        },
+        {
+          "epoch": 13,
+          "time": 3289.5,
+          "step": 104
+        },
+        {
+          "epoch": 14,
+          "time": 3362.7999999821186,
+          "step": 112
+        },
+        {
+          "epoch": 15,
+          "time": 3434.7999999821186,
+          "step": 120
+        },
+        {
+          "epoch": 16,
+          "time": 3508.4000000059605,
+          "step": 128
+        },
+        {
+          "epoch": 17,
+          "time": 3579.9000000059605,
+          "step": 136
+        },
+        {
+          "epoch": 18,
+          "time": 3653.9000000059605,
+          "step": 144
+        },
+        {
+          "epoch": 19,
+          "time": 3723.199999988079,
+          "step": 152
+        },
+        {
+          "epoch": 20,
+          "time": 3794.5,
+          "step": 160
+        }
+      ]
+    },
+    "heartbeatIntervals": [
+      17.600000023841858,
+      16,
+      14.599999994039536,
+      16.299999982118607,
+      16,
+      15.600000023841858,
+      16.5,
+      17,
+      15,
+      16,
+      17,
+      15,
+      16,
+      17,
+      15,
+      15.599999994039536,
+      16.400000005960464,
+      15.899999976158142,
+      17.100000023841858,
+      15,
+      16,
+      17,
+      16,
+      15,
+      17,
+      16,
+      16,
+      16,
+      15.899999976158142,
+      16.100000023841858,
+      15,
+      15.899999976158142,
+      16.100000023841858,
+      16.099999994039536,
+      16.900000005960464,
+      16.099999994039536,
+      15,
+      16.900000005960464,
+      15.099999994039536,
+      16,
+      16.799999982118607,
+      15.200000017881393,
+      17.099999994039536,
+      15.199999988079071,
+      16.5,
+      14.900000005960464,
+      16.099999994039536,
+      16.200000017881393,
+      17,
+      15.099999994039536,
+      16,
+      17,
+      14.900000005960464,
+      16,
+      15.5,
+      16,
+      16.299999982118607,
+      16.700000017881393,
+      15.299999982118607,
+      15.700000017881393,
+      17.69999998807907,
+      15.200000017881393,
+      16.899999976158142,
+      16,
+      15.100000023841858,
+      15.699999988079071,
+      16.599999994039536,
+      14.900000005960464,
+      16,
+      16,
+      15.900000005960464,
+      16.099999994039536,
+      16,
+      16,
+      16.599999994039536,
+      16.099999994039536,
+      15.5,
+      17,
+      15.200000017881393,
+      17,
+      16.099999994039536,
+      15.5,
+      15,
+      15.900000005960464,
+      16.299999982118607,
+      15.700000017881393,
+      16.400000005960464,
+      17,
+      15,
+      16,
+      16,
+      16.299999982118607,
+      15.800000011920929,
+      16.299999982118607,
+      15.700000017881393,
+      16.19999998807907,
+      15.400000005960464,
+      16.69999998807907,
+      17,
+      15,
+      16.100000023841858,
+      15.099999994039536,
+      15.799999982118607,
+      16.100000023841858,
+      16,
+      16,
+      16.099999994039536,
+      15.900000005960464,
+      16.099999994039536,
+      15.799999982118607,
+      16.100000023841858,
+      17,
+      15,
+      16,
+      16,
+      16.899999976158142,
+      17,
+      15,
+      15.800000011920929,
+      17.19999998807907,
+      15,
+      16,
+      16,
+      16.100000023841858,
+      17,
+      14.399999976158142,
+      15.800000011920929,
+      16,
+      16,
+      16,
+      17.5,
+      16,
+      15.300000011920929,
+      15.599999994039536
+    ],
+    "heaps": [
+      {
+        "phase": "before",
+        "usedJSHeapSize": 14861482,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14863098,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14863390,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14863586,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14863794,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14864002,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14864210,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14864418,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14864722,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14865550,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14866114,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14866378,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14866594,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14866810,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14868302,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14870342,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14878734,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14880774,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14882862,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14884902,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14887134,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14888262,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14888478,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14888694,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14888910,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14889126,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14892498,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14893254,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14893470,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14894238,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14894454,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14895222,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14895990,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14896206,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14896974,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14897742,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14897958,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14898726,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14899494,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14899710,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14900478,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14901234,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14901450,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14902218,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14904202,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14904418,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14905186,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14905754,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14906522,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14907290,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14908058,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14908826,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14909594,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14910350,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14911670,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14912426,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14913170,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14914490,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14915798,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14916566,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14917874,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14919194,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14920514,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14921282,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14922602,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14923370,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14924138,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14925446,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14926202,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14927498,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14928266,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14929574,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14930894,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14931662,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14932982,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14934370,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14935138,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14936458,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14937778,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14938546,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14939866,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14940634,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14941954,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14944390,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14945698,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14947006,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14947762,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14949674,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14950994,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14952314,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14953082,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14954402,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14955722,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14957042,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14958362,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14959130,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14960450,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14961770,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14963090,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14963858,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14965178,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14966498,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14967806,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14968574,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14969894,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14971214,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14972534,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14973290,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14974610,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14975906,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14977226,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14977994,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14979314,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14980634,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14981954,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14982722,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14984042,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14985362,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14986682,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14988002,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14988758,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14990066,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14991386,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14992154,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14993474,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14994794,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14996114,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14996882,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14998190,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 14999510,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 15000830,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 15002150,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 15003470,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 15004790,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "during",
+        "usedJSHeapSize": 15005558,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      {
+        "phase": "after",
+        "usedJSHeapSize": 15093938,
+        "totalJSHeapSize": 16269730,
+        "jsHeapSizeLimit": 4395630592
+      }
+    ],
+    "timerTargetMs": 16,
+    "memoryMeaning": "Chromium performance.memory reports the main page JavaScript heap. This excludes Worker heaps, GPU memory, native ONNX/WASM memory and whole-machine RAM; snapshots are not a precise overall memory peak.",
+    "initializationMeaning": "Actual TrainerEngine.initialize: backend validation/selection, variables, Adam and ORT WASM model fetch/verification/session creation. Backend probe already warm; model session first initialized in this run.",
+    "preparationMeaning": "Actual prepareSamples: 40 PNG Blob decodes, Canvas high-quality letterbox, target validation, pixel hashing and cooperative yields. Original file fetching occurred before the measured training.",
+    "epochMeaning": "Between the first checkpoint for successive completed epochs; includes genuine updates, validation and checkpoint work."
+  },
+  "summary": {
+    "initializationMs": 214.5,
+    "imagePreparationMs": 109.09999999403954,
+    "featureExtractionCalls": 72,
+    "featureExtractionTotalMs": 382.3999999463558,
+    "epochDurationsMs": [
+      220.60000002384186,
+      168.19999998807907,
+      111.09999999403954,
+      83.09999999403954,
+      79.7000000178814,
+      88.19999998807907,
+      75.59999999403954,
+      79.90000000596046,
+      71.40000000596046,
+      73.40000000596046,
+      71.5,
+      71.5,
+      74.5,
+      73.2999999821186,
+      72,
+      73.60000002384186,
+      71.5,
+      74,
+      69.2999999821186,
+      71.30000001192093
+    ],
+    "meanEpochMs": 88.68500000089406,
+    "trainingImagePresentationsPerSecondIncludingPreparationValidation": 297.3839505607419,
+    "mainThreadHeartbeat": {
+      "samples": 134,
+      "intervalMedianMs": 16,
+      "intervalP95Ms": 17,
+      "intervalMaxMs": 17.69999998807907
+    },
+    "mainThreadHeap": {
+      "before": {
+        "phase": "before",
+        "usedJSHeapSize": 14861482,
+        "totalJSHeapSize": 16215438,
+        "jsHeapSizeLimit": 4395630592
+      },
+      "after": {
+        "phase": "after",
+        "usedJSHeapSize": 15093938,
+        "totalJSHeapSize": 16269730,
+        "jsHeapSizeLimit": 4395630592
+      },
+      "maximumSampledUsedJSHeapSize": 15093938
+    },
+    "unmeasured": [
+      "Worker/native/WASM total memory",
+      "GPU VRAM",
+      "whole-system RAM",
+      "cold browser start and cold backend probe latency",
+      "physical iPhone/iPad/Safari performance"
+    ]
+  },
+  "sourceAfter": {
+    "src/training/engine.js": "7b2f3e7858856dea71882879b8201dd5561735007edd184a47564379641c6704",
+    "src/training/backend.js": "0fdf1a8f276f7abde477b5a189a0ed61945109464510ffd9c5797c3844b5e809",
+    "src/training/model-ops.js": "f59c75126d8afcf70cf5d596c9203810578575f64464944ffc88ed963983bbe7",
+    "src/training/targets.js": "5276757dbee3f734194ae9e9fc614ad3ecb93f3920cf7f3145d6716889523d98",
+    "src/training/worker-router.js": "28df51307c4a40226aacafc0cff9795d74996f13c25e605849cb0848f007e8cc",
+    "src/model/checkpoint-schema.js": "f52c6e041f43163a40a819ed7f302530e228913d04ba276690a97bdc5777499a",
+    "public/models/yolo26n-features-128.onnx": "a2d8f60b3f6a3f39fc1b4d2f0791c40f6e8a3497a7e01a940c3f6a68cbe57b99",
+    "package-lock.json": "9180d788360e5cad55d409a3ac3838701856aaf280f84aabf458c225596dd772"
+  },
+  "completedAt": "2026-10-22T00:10:16.980Z"
+}

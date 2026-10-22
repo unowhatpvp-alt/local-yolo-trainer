@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-22T00:11:16.436Z",
+  "authority": "Actual original PNG Blob browser Worker training report browser-real-training.json, high-quality Canvas preprocessing. Earlier Node experiments and original low-scaling browser run are retained as diagnostic/failed/superseded evidence.",
+  "reproduce": {
+    "regressions": "node --test tests/*.test.mjs",
+    "photoReplay": "node tests/training-browser.mjs --edge --backend=wasm",
+    "hardwareAcceleration": "node tests/training-browser.mjs --edge --acceleration-only",
+    "performance": "node tests/training-performance.mjs"
+  },
+  "limitations": [
+    "Frozen YOLO26n neck and trained detection head, not full YOLO26 training.",
+    "Random scratch mode is a separate small three-convolution detector.",
+    "128 pixels only; two objects per spatial cell; no silent collision dropping.",
+    "Eight final test photos were first evaluated before a necessary Canvas compatibility repair and then explicitly replayed; no test-based hyperparameter tuning or independent benchmark accuracy claim.",
+    "Photos are locally downloaded research fixtures and are not distributed with the static website.",
+    "No physical iPhone/iPad/Safari or iOS PWA validation.",
+    "Main-page JavaScript heap is not Worker/native/WASM memory, GPU VRAM or total system RAM."
+  ],
+  "postMeasurementChanges": {
+    "recordedAt": "2026-10-22T00:11:16.431Z",
+    "numericBrowserPathChanged": false,
+    "changes": [
+      {
+        "file": "src/training/engine.js",
+        "scope": "Reject noncanonical typed-pixel test inputs requiring resize; production original-Blob Canvas-high path unchanged.",
+        "currentSha256": "7b2f3e7858856dea71882879b8201dd5561735007edd184a47564379641c6704"
+      },
+      {
+        "file": "src/training/backend.js",
+        "scope": "Node uses installed package WASM path; browser retains explicit same-origin WASM path. Actual Node WASM gradient/Adam test added.",
+        "currentSha256": "0fdf1a8f276f7abde477b5a189a0ed61945109464510ffd9c5797c3844b5e809"
+      },
+      {
+        "file": "src/model/checkpoint-schema.js",
+        "scope": "Require complete epochOrder/epochLossSum/epochBatches for exact continuation. All actual generated checkpoints contain them; no training arithmetic changes.",
+        "currentSha256": "f52c6e041f43163a40a819ed7f302530e228913d04ba276690a97bdc5777499a"
+      }
+    ],
+    "verification": "53/53 complete unit tests, 0 skipped; later source-bound performance run accepts the same trained-checkpoint contract. Final test8 quality not rerun for these nonnumerical repairs."
+  },
+  "reports": [
+    {
+      "file": "pre-canvas-high-v1/browser-real-training.json",
+      "bytes": 72166,
+      "sha256": "7155b0e76276f5c27aab8c0eb7ec4183622b1697b190e7a86c41fbf54565f635"
+    },
+    {
+      "file": "browser-real-training.json",
+      "bytes": 82440,
+      "sha256": "2c5f89e27feecb7305b619cd858cd71800dcbdaf6cae2fad2f05306d5743f050"
+    },
+    {
+      "file": "browser-acceleration-training.json",
+      "bytes": 25659,
+      "sha256": "03b4f0ec9b8ad1e496039e4b66b8ebe74f4b9e066936a98dec0cb1e160d14f2d"
+    },
+    {
+      "file": "browser-training-performance.json",
+      "bytes": 38974,
+      "sha256": "43892d0ed72bf27cf2097babbde813d148945d95e64289175d8d27e8c0e26047"
+    },
+    {
+      "file": "gpu-op-diagnostic.json",
+      "bytes": 8764,
+      "sha256": "1b137bdcc699cb07b4f0aa4a0cacc4405c9c95b6d2ac8d2d036192fbe2c5d4fe"
+    },
+    {
+      "file": "real-photo-training-evidence.json",
+      "bytes": 137678,
+      "sha256": "e1996e138fd6670a3b6ba3e53546d5e707d633648932d9c398db0cdb25f4461a"
+    },
+    {
+      "file": "real-photo-focal-v1-evidence.json",
+      "bytes": 62510,
+      "sha256": "6a38acfa8a8977ce6b559069f48e916710d194e2f7024c992a0663c96b89148e"
+    },
+    {
+      "file": "real-photo-focal-kl-v2-evidence.json",
+      "bytes": 63251,
+      "sha256": "94638201da0c188efd11ebb6a916eb91a71b1a7070412c7ef3e6f3fae5cb99f5"
+    },
+    {
+      "file": "real-photo-deep-resize14-evidence.json",
+      "bytes": 58895,
+      "sha256": "12a4586ed7a5bbe08d6589ad233b0fe5b398d7c7aea286f3b4c49a6a15130ab2"
+    },
+    {
+      "file": "real-photo-deep-neck128-evidence.json",
+      "bytes": 58869,
+      "sha256": "bd1cc8bef64be80780767149e7c3221b5c77d2961f9c84f117ffeb115e9ca216"
+    }
+  ]
+}

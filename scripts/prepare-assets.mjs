@@ -1,0 +1,13 @@
+import {copyFile,mkdir,readdir,readFile,writeFile} from 'node:fs/promises';
+import {dirname,join,resolve} from 'node:path';
+import {fileURLToPath} from 'node:url';
+const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
+const ort=join(root,'node_modules/onnxruntime-web'),tf=join(root,'node_modules/@tensorflow/tfjs-backend-wasm');
+await mkdir(join(root,'public/runtime/ort'),{recursive:true});await mkdir(join(root,'public/runtime/tfjs'),{recursive:true});
+for(const name of ['ort-wasm-simd-threaded.mjs','ort-wasm-simd-threaded.wasm'])await copyFile(join(ort,'dist',name),join(root,'public/runtime/ort',name));
+for(const name of await readdir(join(tf,'dist')))if(/^tfjs-backend-wasm(?:-simd|-threaded-simd)?\.wasm$/.test(name))await copyFile(join(tf,'dist',name),join(root,'public/runtime/tfjs',name));
+for(const name of ['ONNX_RUNTIME_LICENSE.txt','ONNX_RUNTIME_THIRD_PARTY_NOTICES.txt','TENSORFLOW_JS_LICENSE.txt','FFLATE_LICENSE.txt'])await copyFile(join(root,'third_party',name),join(root,'public/runtime',name));
+await writeFile(join(root,'public/.nojekyll'),'');
+const {BACKBONE_SHA256,verifyBackbone}=await import('../src/model/backbone.js');
+await verifyBackbone(new Uint8Array(await readFile(join(root,'public/models/yolo26n-features-128.onnx'))));
+console.log('Prepared same-origin WASM runtimes; verified backbone',BACKBONE_SHA256);
