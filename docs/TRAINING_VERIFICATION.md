@@ -26,7 +26,7 @@ The tests cover the concrete configurations recorded in their JSON. CPU scratch 
 
 ## Regression tests and numerical correctness
 
-`node --test tests/*.test.mjs` completed **53/53 tests, zero failures and zero skips** after the final engine/schema fixes. This is an observed local result, not a statement that an uninspected remote CI run passed. The suite includes:
+`node --test tests/*.test.mjs` completed **54/54 tests, zero failures and zero skips** for the release dependency patch. This includes the original 53 engine/schema tests and a bounded-process regression proving both project and checkpoint imports reject malformed ZIP64 without hanging. The pinned fflate version is 0.8.3; see the [dependency review](DEPENDENCY_REVIEW.md). The local static build check and all 8 browser tests also passed after that patch. These are observed local results; remote CI and deployment must be checked separately. The suite includes:
 
 - actual box learning on a new synthetic image, plus two tiny objects in one cell retaining distinct classes and noncollapsed boxes;
 - all scratch convolution kernels changing in response to different source pixels;

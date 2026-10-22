@@ -20,7 +20,7 @@
     "@tensorflow/tfjs-backend-webgl": "4.22.0",
     "@tensorflow/tfjs-backend-wasm": "4.22.0",
     "@tensorflow/tfjs-backend-webgpu": "4.22.0",
-    "fflate": "0.8.2",
+    "fflate": "0.8.3",
     "onnxruntime-web": "1.23.2"
   },
   "devDependencies": {

@@ -35,6 +35,8 @@ No physical full-disk condition was induced. QuotaExceededError was explicitly i
 
 ## Release procedure
 
+The release dependency review is recorded in [dependency review](DEPENDENCY_REVIEW.md). Malformed ZIP64 project/checkpoint imports have a bounded-process regression test; the directly reachable archive-parser issue is fixed by the pinned fflate patch.
+
 The [verification workflow](../.github/workflows/pages.yml) installs the lockfile, runs unit tests, builds and validates the exact static artifact, runs real browser UI/storage/media tests, then runs original-photo Worker training, checkpoint reload and ONNX numerical parity. Pull requests cannot deploy. A main-branch deployment depends on verification succeeding.
 
 Current CI and deployment status is available in [GitHub Actions](https://github.com/unowhatpvp-alt/local-yolo-trainer/actions). A written report alone is not a successful deployment. The released site must additionally be opened and exercised after deployment, including same-origin runtime/model loading and a real train/save/test cycle.
